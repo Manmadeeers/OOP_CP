@@ -4,7 +4,7 @@ using System.Windows.Input;
 using System.Windows;
 using PMSystem.View;
 using PMSystem.Helpers;
-using PMSystem.Model;
+using Models;
 
 namespace PMSystem.ViewModel
 {
@@ -100,7 +100,8 @@ namespace PMSystem.ViewModel
             Password = string.Empty;
 
             // Очистка PasswordBox в UI (Можно через событие, если потребуется)
-
+            MainView mainPage = new MainView(freshlySignedUser);
+            mainPage.Show();
             SignUpView.Close();
 
         }

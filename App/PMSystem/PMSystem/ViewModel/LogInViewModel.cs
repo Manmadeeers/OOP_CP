@@ -1,6 +1,6 @@
 ﻿using PMSystem.Helpers;
 using PMSystem.View;
-using PMSystem.Model;
+using Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
@@ -93,13 +93,15 @@ namespace PMSystem.ViewModel
             {
                 if (loggedUser.IsAdmin)
                 {
-                    loggedUser.Role = "Admin";
+                    loggedUser.UserRole = "Admin";
                 }
                 else
                 {
-                    loggedUser.Role = "User";
+                    loggedUser.UserRole = "User";
                 }
-                
+
+                MainView mainPage = new MainView(loggedUser);
+                mainPage.Show();
 
                 _loginView.Close();
             }

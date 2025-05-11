@@ -1009,13 +1009,24 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+          "Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DAL.dll": {}
         },
         "runtime": {
           "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
         }
       }
     }
@@ -2807,11 +2818,17 @@
       "type": "project",
       "path": "../DAL/DAL.csproj",
       "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "DAL >= 1.0.0"
+      "DAL >= 1.0.0",
+      "Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2849,6 +2866,9 @@
           "projectReferences": {
             "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\DAL.csproj": {
               "projectPath": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\DAL.csproj"
+            },
+            "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\Models.csproj"
             }
           }
         }

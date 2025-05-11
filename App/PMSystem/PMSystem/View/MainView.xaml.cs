@@ -1,27 +1,51 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Models;
+using PMSystem.ViewModel;
 
 namespace PMSystem.View
 {
-    /// <summary>
-    /// Логика взаимодействия для MainView.xaml
-    /// </summary>
     public partial class MainView : Window
     {
-        public MainView()
+        private UserModel _user;
+        public MainView(UserModel user)
         {
             InitializeComponent();
+            _user = user;
+            DataContext = new MainViewModel(user,this);
+            if (user.IsAdmin)
+            {
+                this.UsersButton.Visibility = Visibility.Visible;
+                this.IconText.Text = "A";
+            }
+            else
+            {
+                var UserLetter = user.UserName[0].ToString();
+                this.IconText.Text = UserLetter;
+            }
+        }
+
+
+        public void ElipseClick(object sender, RoutedEventArgs e)
+        {
+            UserPageView userPage = new UserPageView() { DataContext = new UserPageViewModel(_user) };
+            userPage.ShowDialog();
+        }
+        public void LangChangeClick(object sender,RoutedEventArgs e)
+        {
+            if (sender is Button btn)
+            {
+                if (btn.Content.ToString().ToLower() == "en")
+                {
+                    ((App)Application.Current).ChangeLanguage("ru");
+                    btn.Content = "Ru";
+                }
+                else if (btn.Content.ToString().ToLower() == "ru")
+                {
+                    ((App)Application.Current).ChangeLanguage("en");
+                    btn.Content = "En";
+                }
+            }
         }
     }
 }

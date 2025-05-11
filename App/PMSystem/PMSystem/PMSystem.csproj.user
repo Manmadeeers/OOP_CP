@@ -16,6 +16,9 @@
     <Compile Update="View\SignUp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UserPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Resources\lang.en.xaml">
@@ -31,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SignUp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserPageView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

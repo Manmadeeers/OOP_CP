@@ -11,18 +11,13 @@
     <sys:String x:Key="DontHaveAccountText">Нет аккаунта?</sys:String>
     <sys:String x:Key="AlreadyHaveAccount">Уже есть аккаунт?</sys:String>
     <sys:String x:Key="SignUpText">Зарегистрироваться</sys:String>
-    <!--Product view-->
-    <sys:String x:Key="UserInfoText">Информация</sys:String>
-    <sys:String x:Key="ProductsNameText">Имя</sys:String>
-    <sys:String x:Key="ProductsEmailText">Почта</sys:String>
-    <sys:String x:Key="ProductsRoleText">Роль</sys:String>
-    <sys:String x:Key="ProductsPriceText">Цена</sys:String>
-    <sys:String x:Key="ProductsExitButtonText">Выход</sys:String>
-    <sys:String x:Key="ProductsCurrencySign">Br</sys:String>
-    <sys:String x:Key="ProductsSearchButtonText">Поиск</sys:String>
-    <sys:String x:Key="ProductsMorebuttonText">Подробнее</sys:String>
-    <sys:String x:Key="ProductsBuyButtonText">Купить</sys:String>
-    <sys:String x:Key="ProductsAddNewButtonText">Добавить</sys:String>
-    <!--More window-->
-    <sys:String x:Key="MoreWindowTitle">Подробная информация</sys:String>
+    <!--Main Page-->
+    <sys:String x:Key="MainPageTitle">Главная страница</sys:String>
+    <sys:String x:Key="ProjectButton">Проекты</sys:String>
+    <sys:String x:Key="TaskButton">Задачи</sys:String>
+    <sys:String x:Key="StatisticsButton">Статистика</sys:String>
+    <sys:String x:Key="UserButton">Пользователи</sys:String>
+    <sys:String x:Key="WelcomeText">Добро пожаловать!</sys:String>
+    <sys:String x:Key="SideText">Здесь будет отображаться содержимое выбранного раздела.</sys:String>
+    <sys:String x:Key="ExitButton">Выйти</sys:String>
 </ResourceDictionary>

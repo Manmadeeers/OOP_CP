@@ -9,15 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Model\TaskModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Model\TaskModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

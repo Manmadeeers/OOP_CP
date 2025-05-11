@@ -73,3 +73,7 @@ C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\r
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\PMSystem.pdb
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\PMSystem.genruntimeconfig.cache
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\ref\PMSystem.dll
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\bin\Debug\net8.0-windows\Models.dll
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\bin\Debug\net8.0-windows\Models.pdb
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserPageView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserPageView.baml

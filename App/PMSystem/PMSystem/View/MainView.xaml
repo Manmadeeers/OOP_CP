@@ -52,15 +52,16 @@
                         Margin="0,0,0,10"
                         Cursor="Hand"
                         BorderThickness="0.5"
+                        Width="30"
                         Click="LangChangeClick">
                     </Button>
                     <Button Content="{DynamicResource ProjectButton}" Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
-                            Style="{DynamicResource SidePanelButtonStyle}" />
+                            Style="{DynamicResource SidePanelButtonStyle}" Click="ProjectsClick" x:Name="ProjectsBUtton"/>
                     <Button Content="{DynamicResource TaskButton}" Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
-                            Style="{DynamicResource SidePanelButtonStyle}" />
+                            Style="{DynamicResource SidePanelButtonStyle}" Click="TasksClick" Name="TasksButton"/>
 
                     <Button Content="{DynamicResource StatisticsButton}" Margin="0,0,0,0" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
-                         Style="{DynamicResource SidePanelButtonStyle}" />
+                         Style="{DynamicResource SidePanelButtonStyle}" Click="StatisticsClick" Name="StatisticsButton"/>
                     <Button
                         Content="{DynamicResource ExitButton}"
                          Style="{DynamicResource SidePanelButtonStyle}"
@@ -73,7 +74,7 @@
                         Style="{DynamicResource SidePanelButtonStyle}"
                          Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
                         Visibility="Hidden"
-                        x:Name="UsersButton">
+                        x:Name="UsersButton" Click="UsersClick">
                         
                     </Button>
                 </StackPanel>
@@ -102,8 +103,8 @@
         <Border Grid.Column="1" Background="White" CornerRadius="0,10,10,0" Padding="40" 
                 Effect="{DynamicResource DropShadowEffect}">
             <StackPanel>
-                <TextBlock Text="{DynamicResource WelcomeText}" FontSize="24" FontWeight="SemiBold" Foreground="#333333" Margin="0,0,0,20"/>
-                <TextBlock Text="{DynamicResource SideText}" FontSize="14" Foreground="#555555" TextWrapping="Wrap"/>
+                <TextBlock x:Name="WelcomeTextBlock" Text="{DynamicResource WelcomeText}" Background="#2196F3" FontSize="24" FontWeight="SemiBold" Foreground="White"  Margin="0,0,0,20" Padding="10" />
+                <TextBlock x:Name="SideTextBlock" Text="{DynamicResource SideText}" FontSize="14" Foreground="#555555" TextWrapping="Wrap"/>
             </StackPanel>
         </Border>
     </Grid>

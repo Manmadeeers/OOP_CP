@@ -20,4 +20,10 @@
     <sys:String x:Key="WelcomeText">Добро пожаловать!</sys:String>
     <sys:String x:Key="SideText">Здесь будет отображаться содержимое выбранного раздела.</sys:String>
     <sys:String x:Key="ExitButton">Выйти</sys:String>
+    <!--User Page-->
+    <sys:String x:Key="UserPageTitle">Профиль пользователя</sys:String>
+    <sys:String x:Key="UserName">Имя</sys:String>
+    <sys:String x:Key="UserEmail">Почта</sys:String>
+    <sys:String x:Key="UserPassword">Пароль</sys:String>
+    <sys:String x:Key="UserPAgeCloseButton">Закрыть</sys:String>
 </ResourceDictionary>

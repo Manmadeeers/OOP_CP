@@ -12,6 +12,7 @@ namespace PMSystem.View
         {
             InitializeComponent();
             DataContext = new LogInViewModel(this);
+            WindowState = WindowState.Maximized;
         }
 
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)

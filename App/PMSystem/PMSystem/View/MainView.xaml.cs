@@ -14,6 +14,7 @@ namespace PMSystem.View
         public MainView(UserModel user)
         {
             InitializeComponent();
+            WindowState = WindowState.Maximized;
             _user = user;
             DataContext = new MainViewModel(user,this);
             if (user.IsAdmin)

@@ -11,6 +11,7 @@ namespace PMSystem.View
         {
             InitializeComponent();
             DataContext = new SignUpViewModel(this);
+            WindowState = WindowState.Maximized;
         }
 
 

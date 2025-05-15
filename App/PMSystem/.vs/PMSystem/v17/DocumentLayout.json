@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|solutionrelative:dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|solutionrelative:models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|solutionrelative:dal\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Context.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Context.cs",
               "RelativeDocumentMoniker": "DAL\\Context.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Context.cs",
               "RelativeToolTip": "DAL\\Context.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwFMAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T12:52:54.351Z",
               "IsPinned": true,
@@ -48,33 +56,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignUp.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\SignUp.xaml.cs",
-              "RelativeDocumentMoniker": "PMSystem\\View\\SignUp.xaml.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\SignUp.xaml.cs",
-              "RelativeToolTip": "PMSystem\\View\\SignUp.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TaskModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
+              "RelativeDocumentMoniker": "Models\\TaskModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
+              "RelativeToolTip": "Models\\TaskModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T06:59:57.924Z",
+              "WhenOpened": "2025-05-15T08:14:29.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:14:05.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
+              "RelativeToolTip": "DAL\\Repository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwLcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:53:59.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\App.xaml.cs",
+              "RelativeDocumentMoniker": "PMSystem\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\App.xaml.cs",
+              "RelativeToolTip": "PMSystem\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T19:41:57.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "PMSystem\\View\\MainView.xaml.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\MainView.xaml.cs",
               "RelativeToolTip": "PMSystem\\View\\MainView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T06:59:51.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "LogInView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\LogInView.xaml.cs",
               "RelativeDocumentMoniker": "PMSystem\\View\\LogInView.xaml.cs",
@@ -83,19 +130,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T06:59:34.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\App.xaml.cs",
-              "RelativeDocumentMoniker": "PMSystem\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\App.xaml.cs",
-              "RelativeToolTip": "PMSystem\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T19:41:57.561Z",
               "EditorCaption": ""
             }
           ]

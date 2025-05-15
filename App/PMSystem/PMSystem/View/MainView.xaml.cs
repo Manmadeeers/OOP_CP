@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using DAL;
 using Models;
 using PMSystem.ViewModel;
 
@@ -9,6 +10,7 @@ namespace PMSystem.View
     public partial class MainView : Window
     {
         private UserModel _user;
+
 
         private List<Button> _buttons = new List<Button>();
         public MainView(UserModel user)
@@ -19,8 +21,16 @@ namespace PMSystem.View
             DataContext = new MainViewModel(user,this);
             if (user.IsAdmin)
             {
-                this.UsersButton.Visibility = Visibility.Visible;
-                this.IconText.Text = "A";
+                if (App.DatContext.Users.Count() == 0)
+                {
+                    this.IconText.Text = "B";
+                }
+                else
+                {
+                    this.UsersButton.Visibility = Visibility.Visible;
+                    this.IconText.Text = "A";
+                }
+       
             }
             else
             {

@@ -1,10 +1,14 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
+
 namespace Models
 {
     public class TaskModel
     {
 
+        [Key]
         public int TaskId { get; set; }
         public string TaskName { get; set; }
         public string TaskStatus { get; set; }

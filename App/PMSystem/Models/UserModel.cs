@@ -1,8 +1,11 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
+
 namespace Models
 {
     public class UserModel
     {
+        [Key]
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string UserPassword { get; set; }
@@ -12,7 +15,7 @@ namespace Models
 
         public string UserRole { get; set; }
 
-        public string UserPhotoPath { get; set; }
+       // public string UserPhotoPath { get; set; }
         public ICollection<TaskModel> Tasks { get; set; }
         public ICollection<ProjectUser> ProjectUsers { get; set; }
 

@@ -1,4 +1,4 @@
-﻿
+﻿using DAL;
 using System.Windows;
 
 namespace PMSystem
@@ -6,6 +6,20 @@ namespace PMSystem
 
     public partial class App : Application
     {
+        public static Context DatContext { get; private set; }
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            DatContext = new Context();
+            DatContext.Database.EnsureCreated();
+
+        }
+        protected override void OnExit(ExitEventArgs e)
+        {
+            DatContext.Dispose();
+            base.OnExit(e);
+
+        }
         public void ChangeLanguage(string lang)
         {
             var dictUri = new Uri($"Resources/lang.{lang}.xaml", UriKind.Relative);

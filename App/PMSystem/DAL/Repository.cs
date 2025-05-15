@@ -1,5 +1,4 @@
 ﻿
-
 using Models;
 
 namespace DAL
@@ -14,6 +13,7 @@ namespace DAL
     {
         //All methods for User
         public List<UserModel> GetAllUsers();
+        public List<UserModel> GetUsersWithRole(string role);
         public UserModel?GetUserById(int id);
         public bool AddUser(UserModel user);
         public bool DeleteUser(int id);
@@ -33,7 +33,11 @@ namespace DAL
         public bool DeleteTask(int id);
 
         //all methods for projects
+        public bool AddProject(ProjectModel project);
 
+        public bool UpdateProject(ProjectModel updProject,int id);
+
+        public bool DeleteProject(int id);
     }
 
 
@@ -47,6 +51,12 @@ namespace DAL
         public List<UserModel> GetAllUsers() { return this._context.Users.ToList<UserModel>(); }
         //get user by id or null if there's no such user
         public UserModel?GetUserById(int id) { return this._context.Users.FirstOrDefault(u => u.UserId == id); }
+
+
+        public List<UserModel>GetUsersWithRole(string role)
+        {
+            return this._context.Users.Where(u=>u.UserRole== role).ToList();
+        }
 
         //add a user(for admin)
         public bool AddUser(UserModel user)
@@ -189,6 +199,52 @@ namespace DAL
             }
         }
 
+
+        public bool AddProject(ProjectModel project)
+        {
+            if (this._context.Projects.Add(project) is not null)
+            {
+                this._context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateProject(ProjectModel updProject, int id)
+        {
+            ProjectModel? projectToUpdate = this._context.Projects.FirstOrDefault(p => p.ProjectId == id);
+            if(projectToUpdate is not null)
+            {
+                projectToUpdate.ProjectId = id;
+                projectToUpdate.ProjectName = updProject.ProjectName;
+                projectToUpdate.ProjectMethodology = updProject.ProjectMethodology;
+                this._context.Update(projectToUpdate);
+                _context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteProject(int id)
+        {
+            ProjectModel? projToDelete = this._context.Projects.FirstOrDefault(p => p.ProjectId == id);
+            if(projToDelete is not null)
+            {
+                this._context.Projects.Remove(projToDelete);
+                this._context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public void Dispose() { }
 
     }

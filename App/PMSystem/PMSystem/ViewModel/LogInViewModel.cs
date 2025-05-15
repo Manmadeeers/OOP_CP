@@ -63,48 +63,54 @@ namespace PMSystem.ViewModel
 
         private void Login(object parameter)
         {
-            bool success = true;
+            //bool success = true;
+
             UserModel loggedUser = new UserModel();
-            // Реальная логика авторизации должна быть здесь
-            if (Username == "admin" && Password == "1234")
+            
+            List<UserModel> admins = App.repository.GetUsersWithRole("Admin");
+           
+            List<UserModel> allUsers = App.repository.GetAllUsers();
+            bool found = false;
+            foreach(var user in allUsers)
             {
-                success = true;
-                loggedUser = new UserModel(666, Username, $"{Username}@gmail.com", Password, true);
-                MessageBox.Show($"Welcome, {Username}!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                if (user.UserName == this.Username && user.UserPassword == this.Password)
+                {
+                    found = true;
+                    loggedUser = user;
+                    break;
+                }
             }
-            else if (Username == "user" && Password == "0987")
+            if(!found)
             {
-                success = true;
-                loggedUser = new UserModel(1, Username, $"{Username}@gmail.com", Password, false);
-                MessageBox.Show($"Welcome, {Username}!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            else
-            {
-                success = false;
-                MessageBox.Show("Incorrect username or password", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                Password = string.Empty;
+
+                throw new LogInException("User Not Found");
+                
             }
 
 
             Username = string.Empty;
             Password = string.Empty;
 
-            if (success)
-            {
-                if (loggedUser.IsAdmin)
-                {
-                    loggedUser.UserRole = "Admin";
-                }
-                else
-                {
-                    loggedUser.UserRole = "User";
-                }
 
-                MainView mainPage = new MainView(loggedUser);
-                mainPage.Show();
+            MainView mainPage = new MainView(loggedUser);
+            mainPage.Show();
 
-                _loginView.Close();
-            }
+            _loginView.Close();
+
+
+            //if (success)
+            //{
+            //    if (loggedUser.IsAdmin)
+            //    {
+            //        loggedUser.UserRole = "Admin";
+            //    }
+            //    else
+            //    {
+            //        loggedUser.UserRole = "User";
+            //    }
+
+
+            //}
 
         }
 

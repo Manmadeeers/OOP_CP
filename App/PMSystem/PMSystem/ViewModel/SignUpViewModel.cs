@@ -87,12 +87,25 @@ namespace PMSystem.ViewModel
 
             // Здесь можно добавить вызов сервиса регистрации и т.п.
 
-            MessageBox.Show("Registration successfull!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+           // MessageBox.Show("Registration successfull!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            Random random = new Random();
+            
+            List<UserModel> allUsers = App.repository.GetAllUsers();
+            int lastId = allUsers.Last().UserId + 1;
 
-            UserModel freshlySignedUser = new UserModel(random.Next(1, 101), Username, Email, Password, false);
-
+            UserModel freshlySignedUser = new UserModel(lastId, Username, Email, Password, false);
+            if(allUsers.FirstOrDefault(u=>u.UserName==Username) is not null)
+            {
+                throw new SignUpException("Can't sign up! Such username already exists");
+            }
+            if(allUsers.FirstOrDefault(u=>u.UserEmail==Email) is not null)
+            {
+                throw new SignUpException("Can's sign up! Such email already exists");
+            }
+            if (!App.repository.AddUser(freshlySignedUser))
+            {
+                throw new SignUpException("Something went wrong");
+            }
 
             // Очистка формы
             Username = string.Empty;

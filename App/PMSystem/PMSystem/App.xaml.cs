@@ -7,10 +7,13 @@ namespace PMSystem
     public partial class App : Application
     {
         public static Context DatContext { get; private set; }
+        public static Repository repository { get; set; }
+        
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
             DatContext = new Context();
+            repository = new Repository(DatContext);
             DatContext.Database.EnsureCreated();
 
         }

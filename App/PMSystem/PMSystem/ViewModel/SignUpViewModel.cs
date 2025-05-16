@@ -46,7 +46,7 @@ namespace PMSystem.ViewModel
             }
         }
 
-        // Password не содержит OnPropertyChanged, чтобы не раскрывать в UI напрямую
+      
         public string Password
         {
             get => _password;
@@ -55,7 +55,7 @@ namespace PMSystem.ViewModel
                 if (_password != value)
                 {
                     _password = value;
-                    // Вызовем обновление доступности команды после смены пароля
+                
                     ((RelayCommand)SignUpCommand).RaiseCanExecuteChanged();
                 }
             }
@@ -85,15 +85,14 @@ namespace PMSystem.ViewModel
             }
 
 
-            // Здесь можно добавить вызов сервиса регистрации и т.п.
-
-           // MessageBox.Show("Registration successfull!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-
+          
             
             List<UserModel> allUsers = App.repository.GetAllUsers();
             int lastId = allUsers.Last().UserId + 1;
 
-            UserModel freshlySignedUser = new UserModel(lastId, Username, Email, Password, false);
+            UserModel freshlySignedUser = new UserModel( Username, Email, Password, false);
+            freshlySignedUser.UserRole = "User";
+            
             if(allUsers.FirstOrDefault(u=>u.UserName==Username) is not null)
             {
                 throw new SignUpException("Can't sign up! Such username already exists");
@@ -107,12 +106,12 @@ namespace PMSystem.ViewModel
                 throw new SignUpException("Something went wrong");
             }
 
-            // Очистка формы
+           //clean the form
             Username = string.Empty;
             Email = string.Empty;
             Password = string.Empty;
 
-            // Очистка PasswordBox в UI (Можно через событие, если потребуется)
+        
             MainView mainPage = new MainView(freshlySignedUser);
             mainPage.Show();
             SignUpView.Close();

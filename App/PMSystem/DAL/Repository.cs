@@ -38,6 +38,8 @@ namespace DAL
         public bool UpdateProject(ProjectModel updProject,int id);
 
         public bool DeleteProject(int id);
+
+        public List<ProjectModel> GetAllProjects();
     }
 
 
@@ -244,6 +246,11 @@ namespace DAL
             {
                 return false;
             }
+        }
+
+        public List<ProjectModel> GetAllProjects()
+        {
+            return this._context.Projects.ToList();
         }
         public void Dispose() { }
 

@@ -12,7 +12,8 @@ namespace Models
         public string ProjectName { get; set; }
         public string ProjectMethodology { get; set; }
 
-
+        //public DateOnly StartDate { get; set; }
+        //public DateOnly DateOnly { get; set; }
         public ICollection<TaskModel> Tasks { get; set; }
         public ICollection<ProjectUser> ProjectUsers { get; set; }
 

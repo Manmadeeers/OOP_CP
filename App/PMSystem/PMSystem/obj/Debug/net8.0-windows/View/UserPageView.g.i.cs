@@ -52,7 +52,7 @@ namespace PMSystem.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PMSystem;V1.0.0.0;component/view/userpageview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PMSystem;component/view/userpageview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\UserPageView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

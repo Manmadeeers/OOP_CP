@@ -6,7 +6,8 @@ namespace Models
     public class UserModel
     {
         [Key]
-        public int? UserId { get; set; }
+        public int UserId { get; set; }
+        
         public string UserName { get; set; }
         public string UserPassword { get; set; }
 
@@ -21,9 +22,9 @@ namespace Models
 
 
 
-        public UserModel(int id, string name, string email, string password, bool isAdmin)
+        public UserModel( string name, string email, string password, bool isAdmin)
         {
-            UserId = id;
+
             UserName = name;
             UserEmail = email;
             UserPassword = password;

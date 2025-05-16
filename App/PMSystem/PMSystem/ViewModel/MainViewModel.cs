@@ -1,7 +1,9 @@
 ﻿using Models;
 using PMSystem.Helpers;
-using System.Windows.Input;
 using PMSystem.View;
+using System.Diagnostics;
+using System.Windows;
+using System.Windows.Input;
 
 
 namespace PMSystem.ViewModel
@@ -12,7 +14,9 @@ namespace PMSystem.ViewModel
         public UserModel User { get; set; }
         public MainView MainView { get; set; }
 
-        public MainViewModel(UserModel loggedUser,MainView mainView) 
+        public List<ProjectModel> ProjectsToShow { get; set; } = new List<ProjectModel>();
+
+        public MainViewModel(UserModel loggedUser, MainView mainView)
         {
             User = loggedUser;
             MainView = mainView;
@@ -20,7 +24,7 @@ namespace PMSystem.ViewModel
 
 
         private ICommand _exitcommand;
-        public ICommand ExitCommand => _exitcommand ??= new RelayCommand(Exit,CanExit);
+        public ICommand ExitCommand => _exitcommand ??= new RelayCommand(Exit, CanExit);
 
 
         private void Exit(object parameter)
@@ -31,6 +35,31 @@ namespace PMSystem.ViewModel
         }
 
         private bool CanExit(object parameter)
+        {
+            return true;
+        }
+
+
+        private ICommand _showProjectsCommand;
+
+        public ICommand ShowProjectsCommand => _showProjectsCommand ??= new RelayCommand(ShowProjects, CanShowProjects);
+
+
+        private void ShowProjects(object parameter)
+        {
+            ProjectsToShow.Clear();
+            var projects = User.IsAdmin ? App.repository.GetAllProjects() : App.repository.GetAllProjectsByUserId(User.UserId);
+
+            foreach (var project in projects)
+            {
+                ProjectsToShow.Add(project);
+            }
+
+            Debug.WriteLine($"Loaded {ProjectsToShow.Count}. Name of first: {ProjectsToShow[0].ProjectName}");
+            this.MainView.MainTitle.Visibility = Visibility.Hidden;
+            this.MainView.scroll.Visibility = Visibility.Visible;
+        }
+        private bool CanShowProjects(object parameter)
         {
             return true;
         }

@@ -4,7 +4,6 @@ using Models;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using System.Windows;
 using System.Collections.ObjectModel;
 
 namespace PMSystem.ViewModel
@@ -64,7 +63,7 @@ namespace PMSystem.ViewModel
 
         private void Login(object parameter)
         {
-            //bool success = true;
+            
 
             UserModel loggedUser = new UserModel();
             

@@ -77,3 +77,5 @@ C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\bin\Debug\net8.0-windows\M
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\bin\Debug\net8.0-windows\Models.pdb
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserPageView.g.cs
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserPageView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectView.baml

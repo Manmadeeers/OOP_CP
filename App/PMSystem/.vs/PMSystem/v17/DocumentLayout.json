@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LogInView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\LogInView.xaml.cs",
               "RelativeDocumentMoniker": "PMSystem\\View\\LogInView.xaml.cs",
@@ -90,18 +90,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T08:28:07.165Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignUpViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\SignUpViewModel.cs",
-              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\SignUpViewModel.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\SignUpViewModel.cs",
-              "RelativeToolTip": "PMSystem\\ViewModel\\SignUpViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T07:31:03.06Z"
             },
             {
               "$type": "Document",
@@ -130,27 +118,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "PMSystem\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAA0wGMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:50:44.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SignUpViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\SignUpViewModel.cs",
+              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\SignUpViewModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\SignUpViewModel.cs",
+              "RelativeToolTip": "PMSystem\\ViewModel\\SignUpViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T07:31:03.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LogInView.xaml",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\LogInView.xaml",
               "RelativeDocumentMoniker": "PMSystem\\View\\LogInView.xaml",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\LogInView.xaml",
               "RelativeToolTip": "PMSystem\\View\\LogInView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-17T08:21:03.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "PMSystem\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAA8wIgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:50:44.11Z"
+              "WhenOpened": "2025-05-17T08:21:03.075Z"
             },
             {
               "$type": "Document",

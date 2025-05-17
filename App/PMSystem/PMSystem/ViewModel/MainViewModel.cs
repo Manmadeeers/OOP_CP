@@ -80,6 +80,7 @@ namespace PMSystem.ViewModel
 
         private void ShowProjects(object parameter)
         {
+            
             ProjectsToShow.Clear();
             ObservableCollection<ProjectModel> projects = User.IsAdmin ? App.repository.GetAllProjects() : App.repository.GetAllProjectsByUserId(User.UserId);
             Debug.WriteLine($"Projects loaded: {projects.Count}");
@@ -87,9 +88,16 @@ namespace PMSystem.ViewModel
             {
                 ProjectsToShow.Add(project);
             }
+            if (ProjectsToShow.Count != 0)
+            {
+                Debug.WriteLine($"Loaded {ProjectsToShow.Count}. Name of first: {ProjectsToShow[0].ProjectName}");
+            }
+            else
+            {
+                Debug.WriteLine("Loaded 0 Projects.No name of first");
+            }
 
-            Debug.WriteLine($"Loaded {ProjectsToShow.Count}. Name of first: {ProjectsToShow[0].ProjectName}");
-            this.MainView.MainTitle.Visibility = Visibility.Hidden;
+            this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
             this.MainView.ContentControl.ItemsSource = ProjectsToShow;
         }
@@ -111,7 +119,8 @@ namespace PMSystem.ViewModel
                 TasksToShow.Add(task);
             }
             Debug.WriteLine($"Loaded tasks: {TasksToShow.Count}");
-            this.MainView.MainTitle.Visibility = Visibility.Hidden;
+
+            this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
             this.MainView.ContentControl.ItemsSource = TasksToShow;
         }
@@ -132,7 +141,11 @@ namespace PMSystem.ViewModel
                 UsersToShow.Add(user);
             }
             Debug.WriteLine($"Finally got {UsersToShow.Count} users");
-            this.MainView.MainTitle.Visibility = Visibility.Hidden;
+            if (User.IsAdmin)
+            {
+                this.MainView.SearchBar.Visibility = Visibility.Visible;
+            }
+            this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
             this.MainView.ContentControl.ItemsSource = UsersToShow;
         }

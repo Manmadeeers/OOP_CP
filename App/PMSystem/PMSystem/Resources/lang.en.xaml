@@ -20,6 +20,9 @@
     <sys:String x:Key="WelcomeText">Welcome!</sys:String>
     <sys:String x:Key="SideText">Here the containments of the chosen section will be displayed.</sys:String>
     <sys:String x:Key="ExitButton">Exit</sys:String>
+    <sys:String x:Key="ProjectMoreButton">More</sys:String>
+    <sys:String x:Key="TasksDetailsButton">Details</sys:String>
+    <sys:String x:Key="UserInfoButton">Info</sys:String>
     <!--User Page-->
     <sys:String x:Key="UserPageTitle">User Profile</sys:String>
     <sys:String x:Key="UserName">Username</sys:String>

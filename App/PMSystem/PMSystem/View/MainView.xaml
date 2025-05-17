@@ -76,7 +76,7 @@
                     <Button Content="{DynamicResource ProjectButton}" Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
                            Command="{Binding ShowProjectsCommand}" Style="{DynamicResource SidePanelButtonStyle}" Click="ProjectsClick" x:Name="ProjectsBUtton"/>
                     <Button Content="{DynamicResource TaskButton}" Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
-                            Style="{DynamicResource SidePanelButtonStyle}" Click="TasksClick" Name="TasksButton"/>
+                            Command="{Binding ShowTasksCommand}"  Style="{DynamicResource SidePanelButtonStyle}" Click="TasksClick" Name="TasksButton"/>
 
                     <Button Content="{DynamicResource StatisticsButton}" Margin="0,0,0,0" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
                          Style="{DynamicResource SidePanelButtonStyle}" Click="StatisticsClick" Name="StatisticsButton"/>
@@ -90,6 +90,7 @@
                     <Button
                         Content="{DynamicResource UserButton}"
                         Style="{DynamicResource SidePanelButtonStyle}"
+                        Command="{Binding ShowUsersCommand}"
                          Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
                         Visibility="Hidden"
                         x:Name="UsersButton" Click="UsersClick">
@@ -126,21 +127,62 @@
                     <TextBlock x:Name="SideTextBlock" Text="{DynamicResource SideText}" FontSize="14" Foreground="#555555" TextWrapping="Wrap"/>
                 </StackPanel>
                 <ScrollViewer Name="scroll" Visibility="Hidden">
+                    <ItemsControl Name="ContentControl">
+                        <ItemsControl.Resources>
+                            <DataTemplate DataType="{x:Type mdl:ProjectModel}">
+                                <Border Width="300" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Margin="10" Padding="10" Background="White">
 
-                    <ItemsControl ItemsSource="{Binding ProjectsToShow}" ItemTemplate="{DynamicResource ProjectCardTemplate}">
+                                    <StackPanel Width="300">
 
+                                        <TextBlock Text="{Binding ProjectName}" FontWeight="Bold" FontSize="18" Foreground="#333333" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding ProjectMethodology}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
+
+                                        <Button  Content="{DynamicResource ProjectMoreButton}" Width="100" Height="30" Background="#2196F3" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+                            <DataTemplate DataType="{x:Type mdl:TaskModel}">
+                                <Border Width="300" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Margin="10" Padding="10" Background="White">
+
+                                    <StackPanel>
+
+                                        <TextBlock Text="{Binding TaskName}" FontWeight="Bold" FontSize="18" Foreground="#333333" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding TaskDescription}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
+
+                                        <Button Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+                            <DataTemplate DataType="{x:Type mdl:UserModel}">
+                                <Border Width="300"  BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Margin="10" Padding="10" Background="White">
+
+                                    <StackPanel>
+
+                                        <TextBlock Text="{Binding UserName}" FontWeight="Bold" FontSize="18" Foreground="#333333" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding UserEmail}" FontSize="14" Foreground="#555555" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding UserRole}" FontSize="14" Foreground="#777777"/>
+
+                                        <Button Content="Информация" Width="100" Height="30" Background="#2196F3" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.Resources>
                         <ItemsControl.ItemsPanel>
-
                             <ItemsPanelTemplate>
-
                                 <WrapPanel />
-
                             </ItemsPanelTemplate>
-
                         </ItemsControl.ItemsPanel>
-
                     </ItemsControl>
-
                 </ScrollViewer>
             </StackPanel>
             

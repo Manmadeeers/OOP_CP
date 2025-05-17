@@ -5,6 +5,7 @@ using System.Windows;
 using PMSystem.View;
 using PMSystem.Helpers;
 using Models;
+using System.Collections.ObjectModel;
 
 namespace PMSystem.ViewModel
 {
@@ -87,7 +88,7 @@ namespace PMSystem.ViewModel
 
           
             
-            List<UserModel> allUsers = App.repository.GetAllUsers();
+            ObservableCollection<UserModel> allUsers = App.repository.GetAllUsers();
             int lastId = allUsers.Last().UserId + 1;
 
             UserModel freshlySignedUser = new UserModel( Username, Email, Password, false);

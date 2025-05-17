@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace PMSystem.ViewModel
 {
@@ -67,9 +68,9 @@ namespace PMSystem.ViewModel
 
             UserModel loggedUser = new UserModel();
             
-            List<UserModel> admins = App.repository.GetUsersWithRole("Admin");
+            ObservableCollection<UserModel> admins = App.repository.GetUsersWithRole("Admin");
            
-            List<UserModel> allUsers = App.repository.GetAllUsers();
+            ObservableCollection<UserModel> allUsers = App.repository.GetAllUsers();
             bool found = false;
             foreach(var user in allUsers)
             {

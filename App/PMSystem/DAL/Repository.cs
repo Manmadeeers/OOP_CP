@@ -1,5 +1,6 @@
 ﻿
 using Models;
+using System.Collections.ObjectModel;
 
 namespace DAL
 {
@@ -12,21 +13,21 @@ namespace DAL
     interface IRepository:IDisposable
     {
         //All methods for User
-        public List<UserModel> GetAllUsers();
-        public List<UserModel> GetUsersWithRole(string role);
+        public ObservableCollection<UserModel> GetAllUsers();
+        public ObservableCollection<UserModel> GetUsersWithRole(string role);
         public UserModel?GetUserById(int id);
         public bool AddUser(UserModel user);
         public bool DeleteUser(int id);
         public bool UpdateUser(UserModel updUSer, int id);
-        public List<TaskModel>GetAllTasksByUserId(int id);
-        public List<ProjectModel> GetAllProjectsByUserId(int id);
+        public ObservableCollection<TaskModel>GetAllTasksByUserId(int id);
+        public ObservableCollection<ProjectModel> GetAllProjectsByUserId(int id);
+            
+        public ObservableCollection<TaskModel> GetAllUsersCompletedTasks(int userId);
+        public ObservableCollection<TaskModel>GetAllUsersInProgressTasks(int userId);
 
-        public List<TaskModel> GetAllUsersCompletedTasks(int userId);
-        public List<TaskModel>GetAllUsersInProgressTasks(int userId);
-
-        public List<TaskModel>GetAllUsersNotStartedTasks(int userId);
+        public ObservableCollection<TaskModel>GetAllUsersNotStartedTasks(int userId);
         //All methods for Task
-        public List<TaskModel> GetAllTasks();
+        public ObservableCollection<TaskModel> GetAllTasks();
         public UserModel?GetUserAssignedOnTask(int userId);
         public bool AddTask(TaskModel task);
         public bool UpdateTask(TaskModel updTask,int id);
@@ -39,7 +40,7 @@ namespace DAL
 
         public bool DeleteProject(int id);
 
-        public List<ProjectModel> GetAllProjects();
+        public ObservableCollection<ProjectModel> GetAllProjects();
     }
 
 
@@ -50,14 +51,17 @@ namespace DAL
         public Repository(Context context) { this._context = context; }
 
         //get all users as a list of users
-        public List<UserModel> GetAllUsers() { return this._context.Users.ToList<UserModel>(); }
+        public ObservableCollection<UserModel> GetAllUsers()
+        {
+            return new ObservableCollection<UserModel>(this._context.Users.ToList());
+        }
         //get user by id or null if there's no such user
         public UserModel?GetUserById(int id) { return this._context.Users.FirstOrDefault(u => u.UserId == id); }
 
 
-        public List<UserModel>GetUsersWithRole(string role)
+        public ObservableCollection<UserModel> GetUsersWithRole(string role)
         {
-            return this._context.Users.Where(u=>u.UserRole== role).ToList();
+            return new ObservableCollection<UserModel>( this._context.Users.Where(u=>u.UserRole== role).ToList());
         }
 
         //add a user(for admin)
@@ -112,36 +116,36 @@ namespace DAL
         }
 
         //get all tasks assigned to a user
-        public List<TaskModel>GetAllTasksByUserId(int id)
+        public ObservableCollection<TaskModel> GetAllTasksByUserId(int id)
         {
-            return this._context.Tasks.Where(t=>t.UserId == id).ToList();
+            return new ObservableCollection<TaskModel>(this._context.Tasks.Where(t=>t.UserId == id).ToList());
         }
 
         //get all projects assigned to a user
-        public List<ProjectModel> GetAllProjectsByUserId(int id)
+        public ObservableCollection<ProjectModel> GetAllProjectsByUserId(int id)
         {
-            return this._context.ProjectUsers.Where(pu => pu.UserId == id).Select(pu => pu.Project).ToList();
+            return new ObservableCollection<ProjectModel>(this._context.ProjectUsers.Where(pu => pu.UserId == id).Select(pu => pu.Project).ToList());
         }
         //get all completed tasks for a user
-        public List<TaskModel> GetAllUsersCompletedTasks(int userId)
+        public ObservableCollection<TaskModel> GetAllUsersCompletedTasks(int userId)
         {
-            return this._context.Tasks.Where(t => t.TaskStatus == "Completed").ToList();
+            return new ObservableCollection<TaskModel>(this._context.Tasks.Where(t => t.TaskStatus == "Completed").ToList());
         }
         //get all "In Progress" tasks for a user
-        public List<TaskModel> GetAllUsersInProgressTasks(int userId)
+        public ObservableCollection<TaskModel> GetAllUsersInProgressTasks(int userId)
         {
-            return this._context.Tasks.Where(t => t.TaskStatus == "In Progress").ToList();
+            return new ObservableCollection<TaskModel>( this._context.Tasks.Where(t => t.TaskStatus == "In Progress").ToList());
         }
         //get all "Not Started" tasks for a user
-        public List<TaskModel> GetAllUsersNotStartedTasks(int userId)
+        public ObservableCollection<TaskModel> GetAllUsersNotStartedTasks(int userId)
         {
-            return this._context.Tasks.Where(t => t.TaskStatus == "Not Started").ToList();
+            return new ObservableCollection<TaskModel>( this._context.Tasks.Where(t => t.TaskStatus == "Not Started").ToList());
         }
 
         //get all tasks as a list
-        public List<TaskModel> GetAllTasks()
+        public ObservableCollection<TaskModel> GetAllTasks()
         {
-            return this._context.Tasks.ToList();
+            return new ObservableCollection<TaskModel>(this._context.Tasks.ToList());
         }
 
         //get a user who's responsible for a task
@@ -248,10 +252,11 @@ namespace DAL
             }
         }
 
-        public List<ProjectModel> GetAllProjects()
+        public ObservableCollection<ProjectModel> GetAllProjects()
         {
-            return this._context.Projects.ToList();
+            return new ObservableCollection<ProjectModel>(this._context.Projects.ToList());
         }
+        
         public void Dispose() { }
 
     }

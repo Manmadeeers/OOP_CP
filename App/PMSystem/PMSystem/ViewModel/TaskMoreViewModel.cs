@@ -29,6 +29,9 @@ namespace PMSystem.ViewModel
             TaskMod = taskModel;
             Note = TaskMod.Notes;
             _granted = granted;
+            Name = TaskMod.TaskName;
+            Description = TaskMod.TaskDescription;
+            Status = TaskMod.TaskStatus;
         }
 
         private string _note;
@@ -74,6 +77,20 @@ namespace PMSystem.ViewModel
             }
         }
 
+        private string _status;
+        public string Status
+        {
+            get => _status;
+            set
+            {
+                if(_status!= value)
+                {
+                    _status = value;
+                    OnPropertyChanged(nameof(Status));
+                }
+            }
+        }
+
         private UserModel _responsibleUser = new UserModel();
         public UserModel ResponsibleUser
         {
@@ -93,8 +110,11 @@ namespace PMSystem.ViewModel
             {
                 if (_granted)
                 {
-
-                    App.repository.UpdateTaskInfo();
+                    TaskMod.TaskName = Name;
+                    TaskMod.TaskDescription = Description;
+                    TaskMod.Notes = Note;
+                    TaskMod.TaskStatus = Status;
+                    App.repository.UpdateTaskInfo(TaskMod,TaskMod.TaskId);
                 }
                 else
                 {
@@ -116,6 +136,18 @@ namespace PMSystem.ViewModel
         }
 
 
+        private ICommand _deleteCommand;
+        public ICommand DeleteCommand => _deleteCommand ??= new RelayCommand(DeleteTask,CanDeleteTask);
+        private void DeleteTask(object parameter)
+        {
+            MessageBox.Show("Are you sure?", "Confirm Action", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+
+        }
+        private bool CanDeleteTask(object parameter)
+        {
+            
+            return true;
+        }
       
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -31,7 +31,7 @@ namespace DAL
         public UserModel?GetUserAssignedOnTask(int userId);
         public bool AddTask(TaskModel task);
         public bool UpdateTaskNotes(string notes, int id);
-        public bool UpdateTaskInfo(string notes, string name, string description, int id);
+        public bool UpdateTaskInfo(TaskModel updTask, int id);
         public bool DeleteTask(int id);
 
         //all methods for projects
@@ -195,6 +195,8 @@ namespace DAL
                 taskToUpdate.TaskDescription = updTask.TaskDescription;
                 taskToUpdate.Notes = updTask.TaskStatus;
                 taskToUpdate.Notes = updTask.Notes;
+                taskToUpdate.ProjectId = updTask.ProjectId;
+                taskToUpdate.UserId = updTask.UserId;
                 this._context.Tasks.Update(taskToUpdate);
                 this._context.SaveChanges();
                 return true;

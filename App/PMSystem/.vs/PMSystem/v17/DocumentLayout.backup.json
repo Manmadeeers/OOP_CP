@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\taskmoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\taskmoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\taskmoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\taskmoreview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|solutionrelative:models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\taskmoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\taskmoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\taskmoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\taskmoreview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\resources\\lang.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\resources\\lang.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|solutionrelative:dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F8A8126-FCE1-4AC0-9068-AC40F84CD122}|Models\\Models.csproj|solutionrelative:models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,13 +50,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
               "RelativeDocumentMoniker": "DAL\\Repository.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
               "RelativeToolTip": "DAL\\Repository.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAQwLQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAcwMgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T06:53:48.164Z",
               "IsPinned": true,
@@ -64,45 +64,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "lang.en.xaml",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
-              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.en.xaml",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
-              "RelativeToolTip": "PMSystem\\Resources\\lang.en.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T14:23:48.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TaskModel.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
-              "RelativeDocumentMoniker": "Models\\TaskModel.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
-              "RelativeToolTip": "Models\\TaskModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T14:05:35.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaskMoreViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\TaskMoreViewModel.cs",
               "RelativeDocumentMoniker": "PMSystem\\ViewModel\\TaskMoreViewModel.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\TaskMoreViewModel.cs",
               "RelativeToolTip": "PMSystem\\ViewModel\\TaskMoreViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAswI8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T13:55:34.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "TaskMoreView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\TaskMoreView.xaml.cs",
+              "RelativeDocumentMoniker": "PMSystem\\View\\TaskMoreView.xaml.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\TaskMoreView.xaml.cs",
+              "RelativeToolTip": "PMSystem\\View\\TaskMoreView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:47:36.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "TaskMoreView.xaml",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\TaskMoreView.xaml",
               "RelativeDocumentMoniker": "PMSystem\\View\\TaskMoreView.xaml",
@@ -114,33 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskMoreView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\TaskMoreView.xaml.cs",
-              "RelativeDocumentMoniker": "PMSystem\\View\\TaskMoreView.xaml.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\TaskMoreView.xaml.cs",
-              "RelativeToolTip": "PMSystem\\View\\TaskMoreView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:47:36.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "PMSystem\\ViewModel\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "PMSystem\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAAB4BAAAAAAAAAADwvysBAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAB4BAAAAAAAAAADwvy4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T13:50:44.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\MainView.xaml",
               "RelativeDocumentMoniker": "PMSystem\\View\\MainView.xaml",
@@ -148,6 +123,31 @@
               "RelativeToolTip": "PMSystem\\View\\MainView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-16T13:51:01.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "lang.en.xaml",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
+              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.en.xaml",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
+              "RelativeToolTip": "PMSystem\\Resources\\lang.en.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-19T14:23:48.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
+              "RelativeDocumentMoniker": "Models\\TaskModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\Models\\TaskModel.cs",
+              "RelativeToolTip": "Models\\TaskModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:05:35.031Z",
               "EditorCaption": ""
             },
             {

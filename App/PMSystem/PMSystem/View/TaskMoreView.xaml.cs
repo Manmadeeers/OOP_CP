@@ -12,6 +12,7 @@ namespace PMSystem.View
             {
                 this.NewDescriptionPanel.Visibility = Visibility.Visible;
                 this.NewNamePanel.Visibility = Visibility.Visible;
+                this.NewStatusPanel.Visibility = Visibility.Visible;
             }
         }
 

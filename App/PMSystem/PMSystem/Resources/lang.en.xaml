@@ -34,4 +34,10 @@
     <sys:String x:Key="TaskMorePageTitle">Task details</sys:String>
     <sys:String x:Key="SavebuttonTitle">Save</sys:String>
     <sys:String x:Key="CancelButtonTitle">Cancel</sys:String>
+    <sys:String x:Key="TaskDescriptionTitle">Task Description:</sys:String>
+    <sys:String x:Key="ResponsibleUserTitle">Responsible Developer:</sys:String>
+    <sys:String x:Key="DeleteTaskButtonTitle">Delete</sys:String>
+    <sys:String x:Key="NewNameTitle">New Name:</sys:String>
+    <sys:String x:Key="NewDescriptionTitle">New Description:</sys:String>
+    <sys:String x:Key="NewStatusTitle">New Status:</sys:String>
 </ResourceDictionary>

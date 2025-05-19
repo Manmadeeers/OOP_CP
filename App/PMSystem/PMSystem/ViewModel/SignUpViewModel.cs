@@ -137,7 +137,7 @@ namespace PMSystem.ViewModel
         {
             try
             {
-                var addr = new System.Net.Mail.MailAddress(email);
+                var addr = new System.Net.Mail.MailAddress(email); 
                 return addr.Address == email;
             }
             catch

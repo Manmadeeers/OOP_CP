@@ -28,6 +28,17 @@ namespace PMSystem.ViewModel
             }
         }
 
+        private ObservableCollection<ProjectModel> _allProjects = new ObservableCollection<ProjectModel>();
+        public ObservableCollection <ProjectModel> AllProjects
+        {
+            get => _allProjects;
+            set
+            {
+                _allProjects = value;
+                OnPropertyChanged(nameof(AllProjects));
+            }
+        }
+
         private ObservableCollection<TaskModel>_tasksToShow = new ObservableCollection<TaskModel>();
         public ObservableCollection<TaskModel> TasksToShow
         {
@@ -39,6 +50,17 @@ namespace PMSystem.ViewModel
             }
         }
 
+        private ObservableCollection<TaskModel> _allTasks = new ObservableCollection<TaskModel>();
+        public ObservableCollection<TaskModel> AllTasks
+        {
+            get => _allTasks;
+            set
+            {
+                _allTasks = value;
+                OnPropertyChanged(nameof(AllTasks));
+            }
+        }
+
         private ObservableCollection<UserModel>_usersToShow = new ObservableCollection<UserModel>();
         public ObservableCollection<UserModel> UsersToShow
         {
@@ -47,6 +69,17 @@ namespace PMSystem.ViewModel
             {
                 _usersToShow = value;
                 OnPropertyChanged(nameof(UsersToShow));
+            }
+        }
+
+        private ObservableCollection<UserModel>_allUsers = new ObservableCollection<UserModel>();
+        public ObservableCollection<UserModel> AllUsers
+        {
+            get => _allUsers;
+            set
+            {
+                _allUsers = value;
+                OnPropertyChanged(nameof(AllUsers));
             }
         }
         public MainViewModel(UserModel loggedUser, MainView mainView)
@@ -96,7 +129,11 @@ namespace PMSystem.ViewModel
             {
                 Debug.WriteLine("Loaded 0 Projects.No name of first");
             }
-
+            foreach(var project in ProjectsToShow)
+            {
+                AllProjects.Add(project);
+            }
+            this.MainView.SearchBlock.Visibility = Visibility.Visible;
             this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
             this.MainView.ContentControl.ItemsSource = ProjectsToShow;
@@ -117,9 +154,11 @@ namespace PMSystem.ViewModel
             foreach(var task in tasks)
             {
                 TasksToShow.Add(task);
+                AllTasks.Add(task);
             }
-            Debug.WriteLine($"Loaded tasks: {TasksToShow.Count}");
 
+            Debug.WriteLine($"Loaded tasks: {TasksToShow.Count}");
+            this.MainView.SearchBlock.Visibility = Visibility.Visible;
             this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
             this.MainView.ContentControl.ItemsSource = TasksToShow;
@@ -139,11 +178,12 @@ namespace PMSystem.ViewModel
             foreach(var user in users)
             {
                 UsersToShow.Add(user);
+                AllUsers.Add(user);
             }
             Debug.WriteLine($"Finally got {UsersToShow.Count} users");
             if (User.IsAdmin)
             {
-                this.MainView.SearchBar.Visibility = Visibility.Visible;
+                this.MainView.SearchBlock.Visibility = Visibility.Visible;
             }
             this.MainView.MainTitle.Visibility = Visibility.Collapsed;
             this.MainView.scroll.Visibility = Visibility.Visible;
@@ -155,6 +195,108 @@ namespace PMSystem.ViewModel
         }
 
 
+        private string _filterText;
+        public string FilterText
+        {
+            get => _filterText;
+            set
+            {
+                if (_filterText != value)
+                {
+                    _filterText = value;
+                    OnPropertyChanged(nameof(FilterText));
+                }
+            }
+        }
+
+
+        private ICommand _searchCommand;
+        public ICommand SearchCommand => _searchCommand ??= new RelayCommand(Search,CanSearch);
+        private void Search(object parameter)
+        {
+
+            if (this.MainView.ContentControl.ItemsSource == ProjectsToShow)
+            {
+                if (string.IsNullOrWhiteSpace(FilterText))
+                {
+                    ProjectsToShow.Clear();
+                    foreach(var project in AllProjects)
+                    {
+                        ProjectsToShow.Add(project);
+                    }
+                }
+                else
+                {
+                    ObservableCollection<ProjectModel> filteredProjects = new ObservableCollection<ProjectModel>(ProjectsToShow.Where(p => p.ProjectName.Contains(FilterText)).ToList());
+                    ProjectsToShow.Clear();
+                    foreach (var project in filteredProjects)
+                    {
+                        ProjectsToShow.Add(project);
+                    }
+                }
+            }
+            else if (this.MainView.ContentControl.ItemsSource == TasksToShow)
+            {
+                if (string.IsNullOrWhiteSpace(FilterText))
+                {
+                    TasksToShow.Clear();
+                    foreach(var task in AllTasks)
+                    {
+                        TasksToShow.Add(task);
+                    }
+                }
+                else
+                {
+                    ObservableCollection<TaskModel> filteredTasks = new ObservableCollection<TaskModel>(TasksToShow.Where(t=>t.TaskName.Contains(FilterText)).ToList());
+                    TasksToShow.Clear();    
+                    foreach(var task in filteredTasks)
+                    {
+                        TasksToShow.Add(task);
+                    }
+                }
+                
+            }
+            else if (this.MainView.ContentControl.ItemsSource == UsersToShow)
+            {
+                if (string.IsNullOrWhiteSpace(FilterText))
+                {
+                    UsersToShow.Clear();
+                    foreach(var user in AllUsers)
+                    {
+                        UsersToShow.Add(user);
+                    }
+                }
+                else
+                {
+                    ObservableCollection<UserModel> filteredUsers = new ObservableCollection<UserModel>(UsersToShow.Where(u=>u.UserName.Contains(FilterText)).ToList());
+                    UsersToShow.Clear();
+                    foreach(var user in filteredUsers)
+                    {
+                        UsersToShow.Add(user);
+                    }
+                }
+            }
+
+           
+        }
+        private bool CanSearch(object parameter)
+        {
+            return true;
+        }
+
+
+        private ICommand _showTaskDetailsCommand;
+        public ICommand ShowTaskDetailsCommand => _showTaskDetailsCommand ??= new GenericRelayCommand<TaskModel>(ShowTaskDetails, CanShowTaskDetails);
+        private void ShowTaskDetails(TaskModel task)
+        {
+            TaskMoreView taskDetails = new TaskMoreView();
+            taskDetails.DataContext = new TaskMoreViewModel(task);
+            taskDetails.ShowDialog();
+        }
+        private bool CanShowTaskDetails(object parameter)
+        {
+            return true;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

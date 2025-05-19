@@ -23,6 +23,7 @@
     <sys:String x:Key="ProjectMoreButton">Подробнее</sys:String>
     <sys:String x:Key="TasksDetailsButton">Детали</sys:String>
     <sys:String x:Key="UserInfoButton">Информация</sys:String>
+    <sys:String x:Key="SearchButtonTitle">Поиск</sys:String>
     <!--User Page-->
     <sys:String x:Key="UserPageTitle">Профиль пользователя</sys:String>
     <sys:String x:Key="UserName">Имя</sys:String>

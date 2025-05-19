@@ -93,7 +93,6 @@ namespace PMSystem.ViewModel
         private ICommand _exitcommand;
         public ICommand ExitCommand => _exitcommand ??= new RelayCommand(Exit, CanExit);
 
-
         private void Exit(object parameter)
         {
             LogInView logInPage = new LogInView();
@@ -299,6 +298,19 @@ namespace PMSystem.ViewModel
         {
             return true;
            
+        }
+
+        private ICommand _showDetailedUser;
+        public ICommand ShowDetailedUser => _showDetailedUser ??= new GenericRelayCommand<UserModel>(ShowUserDetails,CanShowUserDetails);
+        private void ShowUserDetails(UserModel user)
+        {
+            UserMoreView userView = new UserMoreView();
+            userView.DataContext = new UserMoreViewModel(user);
+            userView.ShowDialog();
+        }
+        private bool CanShowUserDetails(UserModel user)
+        {
+            return true;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

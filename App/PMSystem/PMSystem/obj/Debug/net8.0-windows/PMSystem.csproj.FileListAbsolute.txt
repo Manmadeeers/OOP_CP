@@ -81,3 +81,5 @@ C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\V
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectView.baml
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\TaskMoreView.g.cs
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\TaskMoreView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserMoreView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserMoreView.baml

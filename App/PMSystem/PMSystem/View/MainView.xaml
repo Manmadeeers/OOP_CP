@@ -177,7 +177,7 @@
 
                                         <TextBlock Text="{Binding UserRole}" FontSize="14" Foreground="#777777"/>
 
-                                        <Button Content="{DynamicResource UserInfoButton}" Width="100" Height="30" Background="#2196F3" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+                                        <Button Content="{DynamicResource UserInfoButton}" Command="{Binding DataContext. ShowDetailedUser,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" CommandParameter="{Binding}"  Width="100" Height="30" Background="#2196F3" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
 
                                     </StackPanel>
 

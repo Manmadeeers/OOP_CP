@@ -22,6 +22,9 @@
     <Compile Update="View\TaskMoreView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UserMoreView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UserPageView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\TaskMoreView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserMoreView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UserPageView.xaml">

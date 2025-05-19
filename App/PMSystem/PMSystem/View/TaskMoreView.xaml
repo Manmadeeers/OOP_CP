@@ -124,7 +124,9 @@
                             Cursor="Hand"
                             BorderThickness="0"
                             Margin="10,0,0,0"
-                            Command="{Binding DeleteCommand}">
+                            Command="{Binding DeleteCommand}"
+                            Name="DeleteButton"
+                            Visibility="Collapsed">
                         
                     </Button>
                 </StackPanel>

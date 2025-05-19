@@ -40,4 +40,10 @@
     <sys:String x:Key="NewNameTitle">New Name:</sys:String>
     <sys:String x:Key="NewDescriptionTitle">New Description:</sys:String>
     <sys:String x:Key="NewStatusTitle">New Status:</sys:String>
+    <!--User More View-->
+    <sys:String x:Key="UserMoreWindowTitle">User Details</sys:String>
+    <sys:String x:Key="UserMoreEmailTitle">User Email:</sys:String>
+    <sys:String x:Key="UserMorePasswordTitle">User Password:</sys:String>
+    <sys:String x:Key="UserMoreRoleTitle">User Role:</sys:String>
+    <sys:String x:Key="UserMoreNameTitle">User Name:</sys:String>
 </ResourceDictionary>

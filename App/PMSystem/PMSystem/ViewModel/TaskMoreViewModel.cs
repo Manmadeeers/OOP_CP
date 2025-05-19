@@ -106,7 +106,7 @@ namespace PMSystem.ViewModel
         public ICommand SaveCommand => _saveCommand ??= new RelayCommand(Save,CanSave);
         private void Save(object parameter)
         {
-            if (Note != null)
+            if (Note != null && Name != null && Status != null && Description != null)
             {
                 if (_granted)
                 {
@@ -140,7 +140,9 @@ namespace PMSystem.ViewModel
         public ICommand DeleteCommand => _deleteCommand ??= new RelayCommand(DeleteTask,CanDeleteTask);
         private void DeleteTask(object parameter)
         {
-            MessageBox.Show("Are you sure?", "Confirm Action", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+           // MessageBox.Show("Are you sure?", "Confirm Action", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+            App.repository.DeleteTask(TaskMod.TaskId);
+
 
         }
         private bool CanDeleteTask(object parameter)

@@ -30,4 +30,8 @@
     <sys:String x:Key="UserEmail">Email</sys:String>
     <sys:String x:Key="UserPassword">Password</sys:String>
     <sys:String x:Key="UserPAgeCloseButton">Close</sys:String>
+    <!--Task More View-->
+    <sys:String x:Key="TaskMorePageTitle">Task details</sys:String>
+    <sys:String x:Key="SavebuttonTitle">Save</sys:String>
+    <sys:String x:Key="CancelButtonTitle">Cancel</sys:String>
 </ResourceDictionary>

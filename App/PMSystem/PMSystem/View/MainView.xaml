@@ -160,7 +160,7 @@
 
                                         <TextBlock Text="{Binding TaskDescription}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
 
-                                        <Button Command="{Binding ShowTaskDetailsCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+                                        <Button CommandParameter="{Binding}" Command="{Binding DataContext.ShowTaskDetailsCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
 
                                     </StackPanel>
 

@@ -1,5 +1,10 @@
 ﻿using Models;
 using System.ComponentModel;
+using System.Windows.Input;
+using PMSystem.Helpers;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using System.Windows;
+using PMSystem.View;
 
 namespace PMSystem.ViewModel
 {
@@ -13,18 +18,105 @@ namespace PMSystem.ViewModel
             {
                 _taskModel = value;
                 OnPropertyChanged(nameof(TaskMod));
+
             }
         }
-        public TaskMoreViewModel(TaskModel taskModel)
+
+        private bool _granted;
+        public TaskMoreViewModel(TaskModel taskModel,bool granted)
         {
+            ResponsibleUser = App.repository.GetUserAssignedOnTask(taskModel.TaskId);
             TaskMod = taskModel;
+            Note = TaskMod.Notes;
+            _granted = granted;
+        }
+
+        private string _note;
+        public string Note
+        {
+            get => _note;
+            set
+            {
+                if(_note!= value)
+                {
+                    _note = value;
+                    OnPropertyChanged(nameof(Note));
+                }
+            }
+        }
+
+        private string _description;
+        public string Description
+        {
+            get => _description;
+            set
+            {
+                if(_description!= value)
+                {
+                    _description = value;
+                    OnPropertyChanged(nameof(Description));
+                }
+              
+            }
+        }
+
+        private string _name;
+        public string Name
+        {
+            get => _name;
+            set
+            {
+                if(_name!= value)
+                {
+                    _name = value;
+                    OnPropertyChanged(nameof(Name));
+                }
+            }
+        }
+
+        private UserModel _responsibleUser = new UserModel();
+        public UserModel ResponsibleUser
+        {
+            get => _responsibleUser;
+            set
+            {
+                _responsibleUser = value;
+                OnPropertyChanged(nameof(ResponsibleUser));
+            }
+        }
+
+        private ICommand _saveCommand;
+        public ICommand SaveCommand => _saveCommand ??= new RelayCommand(Save,CanSave);
+        private void Save(object parameter)
+        {
+            if (Note != null)
+            {
+                if (_granted)
+                {
+
+                    App.repository.UpdateTaskInfo();
+                }
+                else
+                {
+                    App.repository.UpdateTaskNotes(Note, TaskMod.TaskId);
+                }
+               
+                MessageBox.Show("Changes Successfully applied!", "Success!", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("FUCK");
+            }
+           
+        }
+           
+        private bool CanSave(object parameter)
+        {
+            return true;
         }
 
 
-
-
-
-
+      
 
         public event PropertyChangedEventHandler PropertyChanged;
 

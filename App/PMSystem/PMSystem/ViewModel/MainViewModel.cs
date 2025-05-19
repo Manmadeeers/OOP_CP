@@ -4,6 +4,7 @@ using PMSystem.View;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -289,13 +290,15 @@ namespace PMSystem.ViewModel
         public ICommand ShowTaskDetailsCommand => _showTaskDetailsCommand ??= new GenericRelayCommand<TaskModel>(ShowTaskDetails, CanShowTaskDetails);
         private void ShowTaskDetails(TaskModel task)
         {
-            TaskMoreView taskDetails = new TaskMoreView();
-            taskDetails.DataContext = new TaskMoreViewModel(task);
-            taskDetails.ShowDialog();
+                TaskMoreView taskDetails = new TaskMoreView(User.IsAdmin);
+                taskDetails.DataContext = new TaskMoreViewModel(task,User.IsAdmin);
+                taskDetails.ShowDialog();
+            
         }
-        private bool CanShowTaskDetails(object parameter)
+        private bool CanShowTaskDetails(TaskModel task)
         {
             return true;
+           
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

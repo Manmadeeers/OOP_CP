@@ -30,7 +30,8 @@ namespace DAL
         public ObservableCollection<TaskModel> GetAllTasks();
         public UserModel?GetUserAssignedOnTask(int userId);
         public bool AddTask(TaskModel task);
-        public bool UpdateTask(TaskModel updTask,int id);
+        public bool UpdateTaskNotes(string notes, int id);
+        public bool UpdateTaskInfo(string notes, string name, string description, int id);
         public bool DeleteTask(int id);
 
         //all methods for projects
@@ -151,7 +152,7 @@ namespace DAL
         //get a user who's responsible for a task
         public UserModel? GetUserAssignedOnTask(int taskId)
         {
-            return this._context.Users.Where(u=>u.UserId == taskId).FirstOrDefault();
+            return this._context.Users.FirstOrDefault(u=>u.UserId==this._context.Tasks.FirstOrDefault(t=>t.TaskId==taskId).UserId);
         }
         
         //add a task
@@ -168,18 +169,32 @@ namespace DAL
             }
         }
 
-        public bool UpdateTask(TaskModel updTask, int id)
+        public bool UpdateTaskNotes(string notes, int id)
         {
             TaskModel?taskToUpdate = this._context.Tasks.FirstOrDefault(t=>t.TaskId == id);
             if(taskToUpdate is not null)
             {
+               
+                taskToUpdate.Notes = notes;
+                this._context.Tasks.Update(taskToUpdate);
+                this._context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateTaskInfo(TaskModel updTask, int id)
+        {
+            TaskModel? taskToUpdate = this._context.Tasks.FirstOrDefault(t => t.TaskId == id);
+            if(taskToUpdate is not null)
+            {
                 taskToUpdate.TaskName = updTask.TaskName;
-                taskToUpdate.TaskId = updTask.TaskId;
-                taskToUpdate.UserId = updTask.UserId;
-                taskToUpdate.Notes = updTask.Notes;
-                taskToUpdate.ProjectId = updTask.ProjectId;
-                taskToUpdate.TaskStatus = updTask.TaskStatus;
                 taskToUpdate.TaskDescription = updTask.TaskDescription;
+                taskToUpdate.Notes = updTask.TaskStatus;
+                taskToUpdate.Notes = updTask.Notes;
                 this._context.Tasks.Update(taskToUpdate);
                 this._context.SaveChanges();
                 return true;

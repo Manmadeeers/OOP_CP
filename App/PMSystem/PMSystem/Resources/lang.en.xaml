@@ -24,6 +24,7 @@
     <sys:String x:Key="TasksDetailsButton">Details</sys:String>
     <sys:String x:Key="UserInfoButton">Info</sys:String>
     <sys:String x:Key="SearchButtonTitle">Search</sys:String>
+    <sys:String x:Key="AddButtonTitle">Add</sys:String>
     <!--User Page-->
     <sys:String x:Key="UserPageTitle">User Profile</sys:String>
     <sys:String x:Key="UserName">Username</sys:String>
@@ -46,4 +47,21 @@
     <sys:String x:Key="UserMorePasswordTitle">User Password:</sys:String>
     <sys:String x:Key="UserMoreRoleTitle">User Role:</sys:String>
     <sys:String x:Key="UserMoreNameTitle">User Name:</sys:String>
+    <!--Add Project View-->
+    <sys:String x:Key="AddProjectPageTitle">Add New Project</sys:String>
+    <sys:String x:Key="ProjectNameTitle">Project Name:</sys:String>
+    <sys:String x:Key="ProjectMethodologyTitle">Project Methodology:</sys:String>
+    <!--Add Task View-->
+    <sys:String x:Key="AddTaskviewTitle">Add New Task</sys:String>
+    <sys:String x:Key="newTaskNameTitle">Name:</sys:String>
+    <sys:String x:Key="newTaskDescriptionTitle">Description:</sys:String>
+    <sys:String x:Key="newTaskNotesTitle">Notes:</sys:String>
+    <sys:String x:Key="newTaskStatusTitel">Select Task Status:</sys:String>
+    <sys:String x:Key="newTaskProjectTitel">Select Project:</sys:String>
+    <sys:String x:Key="newTaskUserTitel">Select User:</sys:String>
+    <!--Add User View-->
+    <sys:String x:Key="AddUserViewTitle">Add New User</sys:String>
+    <sys:String x:Key="newUserNameTitle">Name:</sys:String>
+    <sys:String x:Key="newUserPasswordTitle">Password:</sys:String>
+    <sys:String x:Key="newUserEmailTitle">Email:</sys:String>
 </ResourceDictionary>

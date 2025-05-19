@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace PMSystem.ViewModel
 {
@@ -83,7 +84,7 @@ namespace PMSystem.ViewModel
             if(!found)
             {
 
-                throw new LogInException("User Not Found");
+                MessageBox.Show("User Not Found!","Fail",MessageBoxButton.OK, MessageBoxImage.Error); 
                 
             }
 

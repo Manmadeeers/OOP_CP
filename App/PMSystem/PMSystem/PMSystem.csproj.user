@@ -7,10 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\AddNewProject.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddNewTaskView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddUserView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\LogInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProjectInterractionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\ProjectView.xaml.cs">
@@ -36,10 +48,22 @@
     <Page Update="Resources\lang.ru.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\AddNewProject.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddNewTaskView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddUserView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\LogInView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProjectInterractionView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ProjectView.xaml">

@@ -1,6 +1,4 @@
-﻿
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 
 namespace Models
@@ -19,6 +17,17 @@ namespace Models
         public ProjectModel Project { get; set; }
         public int UserId { get;set; }
         public UserModel User { get; set; }
+
+
+        public TaskModel(string TaskName,string TaskStatus,string TaskDescription,string Notes,int ProjectId,int UserId)
+        {
+            this.TaskName = TaskName;
+            this.TaskStatus = TaskStatus;
+            this.TaskDescription = TaskDescription;
+            this.Notes = Notes;
+            this.ProjectId = ProjectId;
+            this.UserId = UserId;
+        }
 
     }
 }

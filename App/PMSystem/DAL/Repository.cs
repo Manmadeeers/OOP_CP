@@ -130,7 +130,7 @@ namespace DAL
         //get all completed tasks for a user
         public ObservableCollection<TaskModel> GetAllUsersCompletedTasks(int userId)
         {
-            return new ObservableCollection<TaskModel>(this._context.Tasks.Where(t => t.TaskStatus == "Completed").ToList());
+            return new ObservableCollection<TaskModel>(this._context.Tasks.Where(t => t.TaskStatus == "Finished").ToList());
         }
         //get all "In Progress" tasks for a user
         public ObservableCollection<TaskModel> GetAllUsersInProgressTasks(int userId)

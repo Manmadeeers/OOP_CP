@@ -12,5 +12,12 @@ namespace Models
         public UserModel User { get; set; }
 
 
+        public ProjectUser() { }
+        public ProjectUser(int ProjectId,int UserId)
+        {
+            this.ProjectId = ProjectId;
+            this.UserId = UserId;   
+        }
+
     }
 }

@@ -1,5 +1,9 @@
 ﻿using Models;
+using PMSystem.Helpers;
+using PMSystem.View;
 using System.ComponentModel;
+using System.Windows;
+using System.Windows.Input;
 
 namespace PMSystem.ViewModel
 {
@@ -7,6 +11,7 @@ namespace PMSystem.ViewModel
     {
 
         private UserModel _currentUser = new UserModel();
+        private UserMoreView _view;
         public UserModel CurrentUser
         {
             get=> _currentUser;
@@ -16,8 +21,9 @@ namespace PMSystem.ViewModel
                 OnPropertyChanged(nameof(CurrentUser));
             }
         }
-        public UserMoreViewModel(UserModel user)
+        public UserMoreViewModel(UserModel user,UserMoreView view)
         {
+            _view = view;
             CurrentUser = user;
             Email = CurrentUser.UserEmail;
             Password = CurrentUser.UserPassword;
@@ -68,8 +74,56 @@ namespace PMSystem.ViewModel
             }
         }
 
+        
+
+        private ICommand _saveCommand;
+        public ICommand SaveCommand => _saveCommand ??= new RelayCommand(Save,CanSave);
+        private void Save(object parameter)
+        {
+            UserModel updUser = new UserModel(UserName, Email, Password, CurrentUser.IsAdmin);
+            updUser.UserRole = CurrentUser.UserRole;
+            if (App.repository.UpdateUser(updUser,CurrentUser.UserId))
+            {
+                MessageBox.Show("User was sucessfully updated!","Success",MessageBoxButton.OK,MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong","Fail",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
+
+        private bool CanSave(object parameter)
+        {
+            if (UserName != null&&Email != null && Password != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
+        private ICommand _deleteCommand;
+        public ICommand DeleteCommand => _deleteCommand ??= new RelayCommand(Delete,CanDelete);
+
+        private void Delete(object parameter)
+        {
+            if (App.repository.DeleteUser(CurrentUser.UserId))
+            {
+                MessageBox.Show("User was deleted!","Success",MessageBoxButton.OK,MessageBoxImage.Information) ;
+            }
+            else
+            { 
+                MessageBox.Show("Something went wrong!","Fail",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
+
+        private bool CanDelete(object parameter)
+        {
+            return true;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

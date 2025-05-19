@@ -96,15 +96,15 @@ namespace PMSystem.ViewModel
             
             if(allUsers.FirstOrDefault(u=>u.UserName==Username) is not null)
             {
-                throw new SignUpException("Can't sign up! Such username already exists");
+                MessageBox.Show("Can't sign up! Such username already exists","Fail",MessageBoxButton.OK,MessageBoxImage.Error);
             }
             if(allUsers.FirstOrDefault(u=>u.UserEmail==Email) is not null)
             {
-                throw new SignUpException("Can's sign up! Such email already exists");
+                MessageBox.Show("Can's sign up! Such email already exists", "Fail", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             if (!App.repository.AddUser(freshlySignedUser))
             {
-                throw new SignUpException("Something went wrong");
+                MessageBox.Show("Something went wrong", "Fail", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
            //clean the form

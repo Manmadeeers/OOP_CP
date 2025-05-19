@@ -31,6 +31,11 @@ namespace Models
             IsAdmin = isAdmin;
         }
         public UserModel() { }
+
+        public override string ToString()
+        {
+            return this.UserName;
+        }
     }
 }
 

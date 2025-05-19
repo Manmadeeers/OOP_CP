@@ -77,8 +77,8 @@
 
                 <!-- Notes Section -->
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
-                    <TextBlock Text="{DynamicResource UserMoreNameTitle}" FontSize="16"></TextBlock>
-                    <TextBox Text="{Binding Name,UpdateSourceTrigger=PropertyChanged}">
+                    <TextBlock Text="{DynamicResource UserMoreNameTitle}" FontSize="16" Margin="0,0,20,0"></TextBlock>
+                    <TextBox Text="{Binding UserName,UpdateSourceTrigger=PropertyChanged}" FontSize="16">
                         
                     </TextBox>
                 </StackPanel>
@@ -100,7 +100,7 @@
                         Foreground="White" 
                         FontWeight="SemiBold" 
                         Cursor="Hand" 
-                        BorderThickness="0" 
+                        BorderThickness="0" Click="Button_Click" 
                        />
                     <Button Content="{DynamicResource DeleteTaskButtonTitle}" Width="80" Height="30"
                         Background="#f44336"

@@ -40,4 +40,27 @@
     <sys:String x:Key="NewNameTitle">Новое название:</sys:String>
     <sys:String x:Key="NewDescriptionTitle">Новое описание:</sys:String>
     <sys:String x:Key="NewStatusTitle">Новый статус:</sys:String>
+    <!--User More View-->
+    <sys:String x:Key="UserMoreWindowTitle">Подробнее о пользователе</sys:String>
+    <sys:String x:Key="UserMoreEmailTitle">Почта:</sys:String>
+    <sys:String x:Key="UserMorePasswordTitle">Пароль:</sys:String>
+    <sys:String x:Key="UserMoreRoleTitle">Роль:</sys:String>
+    <sys:String x:Key="UserMoreNameTitle">Имя:</sys:String>
+    <!--Add Project View-->
+    <sys:String x:Key="AddProjectPageTitle">Добавить новый проект</sys:String>
+    <sys:String x:Key="ProjectNameTitle">Имя проекта:</sys:String>
+    <sys:String x:Key="ProjectMethodologyTitle">Методология проекта:</sys:String>
+    <!--Add Task View-->
+    <sys:String x:Key="AddTaskviewTitle">Добавить новую задачу</sys:String>
+    <sys:String x:Key="newTaskNameTitle">Название:</sys:String>
+    <sys:String x:Key="newTaskDescriptionTitle">Описание:</sys:String>
+    <sys:String x:Key="newTaskNotesTitle">Заметки:</sys:String>
+    <sys:String x:Key="newTaskStatusTitel">Выберите статус:</sys:String>
+    <sys:String x:Key="newTaskProjectTitel">Выберите проект:</sys:String>
+    <sys:String x:Key="newTaskUserTitel">Выберите пользователя:</sys:String>
+    <!--Add User View-->
+    <sys:String x:Key="AddUserViewTitle">Добавить нового пользователя</sys:String>
+    <sys:String x:Key="newUserNameTitle">Имя:</sys:String>
+    <sys:String x:Key="newUserPasswordTitle">Пароль:</sys:String>
+    <sys:String x:Key="newUserEmailTitle">Почта:</sys:String>
 </ResourceDictionary>

@@ -83,3 +83,11 @@ C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\V
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\TaskMoreView.baml
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserMoreView.g.cs
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\UserMoreView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddNewProject.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddNewProject.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddNewTaskView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddNewTaskView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectInterractionView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectInterractionView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddUserView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddUserView.baml

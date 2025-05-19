@@ -12,6 +12,7 @@ namespace PMSystem.View
 
 
         private List<Button> _buttons = new List<Button>();
+        private List<Button> _additionButtons = new List<Button>();
         public MainView(UserModel user)
         {
             InitializeComponent();
@@ -42,6 +43,9 @@ namespace PMSystem.View
             _buttons.Add(this.UsersButton);
             _buttons.Add(this.StatisticsButton);
 
+            _additionButtons.Add(this.AddProjectButton);
+            _additionButtons.Add(this.AddUserButton);
+            _additionButtons.Add(this.AddTaskButton);
         }
 
 
@@ -53,6 +57,21 @@ namespace PMSystem.View
                 {
                     button.Background = new SolidColorBrush(Colors.Transparent);
                     button.Foreground = new SolidColorBrush(Color.FromRgb(51, 51, 51));
+                }
+            }
+        }
+
+        private void ClearAdditionButtons(Button ignore)
+        {
+            foreach(var button in _additionButtons) 
+            {
+                if(button.Name != ignore.Name)
+                {
+                    button.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    button.Visibility = Visibility.Visible;
                 }
             }
         }
@@ -68,7 +87,11 @@ namespace PMSystem.View
             ClearButtonsBackground(this.ProjectsBUtton);
             this.ProjectsBUtton.Background = new SolidColorBrush(Color.FromRgb(33, 150, 243));
             this.ProjectsBUtton.Foreground = new SolidColorBrush(Colors.White);
-
+            if (_user.IsAdmin)
+            {
+                ClearAdditionButtons(this.AddProjectButton);
+            }
+           
 
         }
 
@@ -77,6 +100,11 @@ namespace PMSystem.View
             ClearButtonsBackground(this.TasksButton);
             this.TasksButton.Background = new SolidColorBrush(Color.FromRgb(33, 150, 243));
             this.TasksButton.Foreground = new SolidColorBrush(Colors.White);
+            if (_user.IsAdmin)
+            {
+                ClearAdditionButtons(this.AddTaskButton);
+            }
+           
         }
 
         public void StatisticsClick(object sender, RoutedEventArgs e)
@@ -91,6 +119,8 @@ namespace PMSystem.View
             ClearButtonsBackground(this.UsersButton);
             this.UsersButton.Background = new SolidColorBrush(Color.FromRgb(33, 150, 243));
             this.UsersButton.Foreground = new SolidColorBrush(Colors.White);
+            ClearAdditionButtons(this.AddUserButton);
+           
         }
         public void LangChangeClick(object sender,RoutedEventArgs e)
         {

@@ -4,7 +4,6 @@ using PMSystem.View;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -304,14 +303,72 @@ namespace PMSystem.ViewModel
         public ICommand ShowDetailedUser => _showDetailedUser ??= new GenericRelayCommand<UserModel>(ShowUserDetails,CanShowUserDetails);
         private void ShowUserDetails(UserModel user)
         {
-            UserMoreView userView = new UserMoreView();
-            userView.DataContext = new UserMoreViewModel(user);
+            UserMoreView userView = new UserMoreView(User);
+            userView.DataContext = new UserMoreViewModel(user,userView);
             userView.ShowDialog();
         }
         private bool CanShowUserDetails(UserModel user)
         {
             return true;
         }
+
+
+        private ICommand _addNewProjectCommand;
+        public ICommand AddNewProjectCommand => _addNewProjectCommand ??= new RelayCommand(ShowAddView,CanShowAddView);
+        private void ShowAddView(object parameter)
+        {
+            AddNewProject addProjView = new AddNewProject();
+            addProjView.ShowDialog();
+        }
+        private bool CanShowAddView(object parameter)
+        {
+            return true;
+        }
+
+
+        private ICommand _showAddTask;
+        public ICommand ShowAddTaskCommand => _showAddTask ??= new RelayCommand(ShowAddTask,CanShowAddTask);
+        private void ShowAddTask(object parameter)
+        {
+            AddNewTaskView addTaskView = new AddNewTaskView();
+            addTaskView.DataContext = new AddNewTaskViewModel();
+            addTaskView.ShowDialog();
+        }
+        private bool CanShowAddTask(object parameter)
+        {
+            return true;
+        }
+
+
+        private ICommand _showProjectInterCommand;
+        public ICommand ShowProjectInterCommand => _showProjectInterCommand ??= new GenericRelayCommand<ProjectModel>(ShowProhectInter,CanShowProjectInter);
+        private void ShowProhectInter(ProjectModel projectModel)
+        {
+            ProjectInterractionView projectView = new ProjectInterractionView();
+            projectView.DataContext = new ProjectInterractionViewModel(User,projectModel);
+            projectView.Show();
+            MainView.Close();
+        }
+        private bool CanShowProjectInter(ProjectModel projectModel)
+        {
+            return true;
+        }
+
+        private ICommand _showaddUser;
+        public ICommand ShowAddUser => _showaddUser ??= new RelayCommand(ShowUserAddition,CanShowUserAddition);
+
+        private void ShowUserAddition(object parameter)
+        {
+            AddUserView addUserView = new AddUserView();
+            addUserView.DataContext = new AddUserViewModel();
+            addUserView.ShowDialog();
+        }
+
+        private bool CanShowUserAddition(object parameter)
+        {
+            return true;
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

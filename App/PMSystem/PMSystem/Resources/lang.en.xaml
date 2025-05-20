@@ -67,4 +67,9 @@
     <!--Project Main View-->
     <sys:String x:Key="ProjectMainPageTitle">Project</sys:String>
     <sys:String x:Key="NotStartedSection">Not Started</sys:String>
+    <sys:String x:Key="InProgressSection">In Progress</sys:String>
+    <sys:String x:Key="FinishedSection">Finished</sys:String>
+    <sys:String x:Key="GoButtonTitle">Go</sys:String>
+    <!--Statistics View-->
+    <sys:String x:Key="StatisticsViewTitle">Statistics</sys:String>
 </ResourceDictionary>

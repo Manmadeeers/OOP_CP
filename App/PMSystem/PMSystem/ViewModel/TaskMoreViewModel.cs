@@ -5,6 +5,7 @@ using PMSystem.Helpers;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Windows;
 using PMSystem.View;
+using System.Collections.ObjectModel;
 
 namespace PMSystem.ViewModel
 {
@@ -32,6 +33,9 @@ namespace PMSystem.ViewModel
             Name = TaskMod.TaskName;
             Description = TaskMod.TaskDescription;
             Status = TaskMod.TaskStatus;
+            Stats.Add("In Progress");
+            Stats.Add("Not Started");
+            Stats.Add("Finished");
         }
 
         private string _note;
@@ -91,6 +95,18 @@ namespace PMSystem.ViewModel
             }
         }
 
+        private ObservableCollection<string>_stats = new ObservableCollection<string>();
+        public ObservableCollection<string> Stats
+        {
+            get=> _stats;
+            set
+            {
+                _stats = value;
+                OnPropertyChanged(nameof(Stats));   
+
+            }
+        }
+
         private UserModel _responsibleUser = new UserModel();
         public UserModel ResponsibleUser
         {
@@ -140,8 +156,15 @@ namespace PMSystem.ViewModel
         public ICommand DeleteCommand => _deleteCommand ??= new RelayCommand(DeleteTask,CanDeleteTask);
         private void DeleteTask(object parameter)
         {
-           // MessageBox.Show("Are you sure?", "Confirm Action", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
-            App.repository.DeleteTask(TaskMod.TaskId);
+            // MessageBox.Show("Are you sure?", "Confirm Action", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+            if (App.repository.DeleteTask(TaskMod.TaskId))
+            {
+                MessageBox.Show("Task Deleted!","Success",MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Something went wrong", "Fail", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
 
         }

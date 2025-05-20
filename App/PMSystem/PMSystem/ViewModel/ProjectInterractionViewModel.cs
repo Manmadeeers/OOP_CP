@@ -89,10 +89,26 @@ namespace PMSystem.ViewModel
 
         private void RefreshData()
         {
-            NotStartedTasks = new ObservableCollection<TaskModel>(App.repository.GetAllUsersNotStartedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
-            InProgressTasks = new ObservableCollection<TaskModel>(App.repository.GetAllUsersInProgressTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
-            FinishedTasks = new ObservableCollection<TaskModel>(App.repository.GetAllUsersCompletedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+            var allNotStarted  = new ObservableCollection<TaskModel>(App.repository.GetAllUsersNotStartedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+            NotStartedTasks.Clear();
+            foreach(var task in allNotStarted)
+            {
+                NotStartedTasks.Add(task);
+            }
+            var allinProgress = new ObservableCollection<TaskModel>(App.repository.GetAllUsersInProgressTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+            InProgressTasks.Clear();
+            foreach(var task in allinProgress)
+            {
+                InProgressTasks.Add(task);
+            }
+            var allFinished = new ObservableCollection<TaskModel>(App.repository.GetAllUsersCompletedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+            FinishedTasks.Clear();
+            foreach(var task in allFinished)
+            {
+                FinishedTasks.Add(task);
+            }
         }
+   
 
 
         public ProjectInterractionViewModel(UserModel user, ProjectModel project,ProjectInterractionView view)
@@ -105,11 +121,12 @@ namespace PMSystem.ViewModel
             Stats.Add("Finished");
             View = view;
             View.NotStartedTasks.DataContext = this;
+          
         }
 
 
         private ICommand _goCommand;
-        public ICommand GoCommand => _goCommand ??= new GenericRelayCommand<TaskModel>(Go,CanGo);
+        public ICommand GoCommand =>_goCommand ??= new GenericRelayCommand<TaskModel>(Go, CanGo);
         private void Go(TaskModel task)
         {
             if (task.TaskStatus == "Not Started")
@@ -117,7 +134,7 @@ namespace PMSystem.ViewModel
                 App.repository.UpdateTaskStatus("In Progress",task.TaskId);
                 RefreshData();
             }
-            else if(task.TaskStatus =="In progress")
+            else if(task.TaskStatus =="In Progress")
             {
                 App.repository.UpdateTaskStatus("Finished", task.TaskId);
                 RefreshData();
@@ -132,6 +149,21 @@ namespace PMSystem.ViewModel
             return true;
         }
 
+
+        private ICommand _showTaskDetailsCommand;
+        public ICommand ShowTaskDetailsCommand => _showTaskDetailsCommand ??= new GenericRelayCommand<TaskModel>(ShowTaskDetails, CanShowTaskDetails);
+        private void ShowTaskDetails(TaskModel task)
+        {
+            TaskMoreView taskDetails = new TaskMoreView(User.IsAdmin);
+            taskDetails.DataContext = new TaskMoreViewModel(task, User.IsAdmin);
+            taskDetails.ShowDialog();
+            RefreshData();
+        }
+        private bool CanShowTaskDetails(TaskModel task)
+        {
+            return true;
+
+        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;

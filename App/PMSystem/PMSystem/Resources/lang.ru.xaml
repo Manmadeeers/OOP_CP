@@ -63,4 +63,10 @@
     <sys:String x:Key="newUserNameTitle">Имя:</sys:String>
     <sys:String x:Key="newUserPasswordTitle">Пароль:</sys:String>
     <sys:String x:Key="newUserEmailTitle">Почта:</sys:String>
+    <!--Project Main View-->
+    <sys:String x:Key="ProjectMainPageTitle">Проект</sys:String>
+    <sys:String x:Key="NotStartedSection">Не начата</sys:String>
+    <sys:String x:Key="InProgressSection">В работе</sys:String>
+    <sys:String x:Key="FinishedSection">Завершена</sys:String>
+    <sys:String x:Key="GoButtonTitle">Вперёд</sys:String>
 </ResourceDictionary>

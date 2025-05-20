@@ -69,7 +69,8 @@
                     Content="{DynamicResource ExitButton}"
                     Style="{DynamicResource SidePanelButtonStyle}"
                     Margin="0,0,0,12" Padding="12" Background="Transparent" BorderThickness="0.5" Foreground="#333333" FontWeight="SemiBold" Cursor="Hand"
-                    Click="ExitClick">
+                    Click="ExitClick"
+                    HorizontalAlignment="Center">
 
                 </Button>
 
@@ -101,8 +102,7 @@
                                         <TextBlock Text="{Binding TaskDescription}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
                                         
                                         <Button CommandParameter="{Binding}" Command="{Binding DataContext.ShowTaskDetailsCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
-                                        <Button x:Name="GoButton" Content="Go" Command="{Binding GoCommand}"></Button>
-                                    </StackPanel>
+                                        <Button CommandParameter="{Binding}" x:Name="GoButton" Content="{DynamicResource GoButtonTitle}" Command="{Binding DataContext.GoCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Width="100" Height="30" Background="#2196F3" Foreground="White" Margin="0,10,0,0" Cursor="Hand"></Button>                                    </StackPanel>
 
                                 </Border>
                             </DataTemplate>
@@ -114,9 +114,25 @@
             <!-- In Progress Column -->
             <Border Background="#BBDEFB" Margin="10" CornerRadius="5" Grid.Column="1">
                 <StackPanel>
-                    <TextBlock Text="In Progress" FontWeight="Bold" FontSize="18" Margin="10"/>
-                    <ItemsControl Name="InProgressTasks">
-                        <!-- Task items for In Progress column will go here -->
+                    <TextBlock Text="{DynamicResource InProgressSection}" FontWeight="Bold" FontSize="18" Margin="10"/>
+                    <ItemsControl Name="InProgressTasks" ItemsSource="{Binding InProgressTasks}">
+                        <ItemsControl.Resources >
+                            <DataTemplate DataType="{x:Type mdl:TaskModel}">
+                                <Border Width="200" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Margin="10" Padding="10" Background="White">
+
+                                    <StackPanel>
+
+                                        <TextBlock Text="{Binding TaskName}" FontWeight="Bold" FontSize="18" Foreground="#333333" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding TaskDescription}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
+
+                                        <Button CommandParameter="{Binding}" Command="{Binding DataContext.ShowTaskDetailsCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+                                        <Button CommandParameter="{Binding}" x:Name="GoButton" Content="{DynamicResource GoButtonTitle}" Command="{Binding DataContext.GoCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Width="100" Height="30" Background="#2196F3" Foreground="White" Margin="0,10,0,0" Cursor="Hand"></Button>
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.Resources>
                     </ItemsControl>
                 </StackPanel>
             </Border>
@@ -124,9 +140,25 @@
             <!-- Finished Column -->
             <Border Background="#90CAF9" Margin="10" CornerRadius="5" Grid.Column="2">
                 <StackPanel>
-                    <TextBlock Text="Finished" FontWeight="Bold" FontSize="18" Margin="10"/>
-                    <ItemsControl Name="FinishedTasks">
-                        <!-- Task items for Finished column will go here -->
+                    <TextBlock Text="{DynamicResource FinishedSection}" FontWeight="Bold" FontSize="18" Margin="10"/>
+                    <ItemsControl Name="FinishedTasks" ItemsSource="{Binding FinishedTasks}">
+                        <ItemsControl.Resources >
+                            <DataTemplate DataType="{x:Type mdl:TaskModel}">
+                                <Border Width="200" BorderBrush="#E0E0E0" BorderThickness="1" CornerRadius="10" Margin="10" Padding="10" Background="White">
+
+                                    <StackPanel>
+
+                                        <TextBlock Text="{Binding TaskName}" FontWeight="Bold" FontSize="18" Foreground="#333333" Margin="0,0,0,5"/>
+
+                                        <TextBlock Text="{Binding TaskDescription}" FontSize="14" Foreground="#777777" Margin="0,0,0,10"/>
+
+                                        <Button CommandParameter="{Binding}" Command="{Binding DataContext.ShowTaskDetailsCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Content="{DynamicResource TasksDetailsButton}" Width="100" Height="30" Background="#4CAF50" Foreground="White" FontWeight="SemiBold" Cursor="Hand" BorderThickness="0"/>
+                                        <Button CommandParameter="{Binding}" x:Name="GoButton" Content="{DynamicResource GoButtonTitle}" Command="{Binding DataContext.GoCommand,RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Width="100" Height="30" Background="#2196F3" Foreground="White" Margin="0,10,0,0" Cursor="Hand"></Button>
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.Resources>
                     </ItemsControl>
                 </StackPanel>
             </Border>

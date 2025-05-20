@@ -370,6 +370,18 @@ namespace PMSystem.ViewModel
         }
 
 
+        private ICommand _statisticsCommand;
+        public ICommand StatisticsCommand => _statisticsCommand ??= new RelayCommand(ShowStatistics,CanShowStatistics);
+
+        private void ShowStatistics(object parameter)
+        {
+
+        }
+        private bool CanShowStatistics(object parameter)
+        {
+            return true;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
 

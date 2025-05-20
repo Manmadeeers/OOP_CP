@@ -1,7 +1,7 @@
 ﻿<Window x:Class="PMSystem.View.TaskMoreView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="{DynamicResource TaskMorePageTitle}" Height="600" Width="600"
+        Title="{DynamicResource TaskMorePageTitle}" Height="650" Width="600"
         Background="#f0f2f5" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
@@ -82,14 +82,25 @@
                         <TextBox Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" Width="300" />
                     </StackPanel>
 
+                    <TextBlock Text="{DynamicResource NewStatusTitle}" FontSize="16"></TextBlock>
                     <!-- New Status Panel -->
-                    <StackPanel Orientation="Horizontal" Name="NewStatusPanel" Visibility="Collapsed">
-                        <TextBlock Text="{DynamicResource NewStatusTitle}" VerticalAlignment="Center" Margin="0,0,40 ,0"/>
-                        <TextBox Text="{Binding Status, UpdateSourceTrigger=PropertyChanged}" Width="300" />
-                    </StackPanel>
+                    <ListBox
+                        ItemsSource="{Binding Stats}"
+                        SelectionChanged="ListBox_SelectionChanged"
+                        SelectionMode="Single"
+                        Name="StatusChecker"
+                        Height="80"
+                        Background="#FFFFFF"
+                        BorderBrush="#E0E0E0"
+                        BorderThickness="1"
+                        FontSize="14" 
+                        Padding="5">
+
+                    </ListBox>
                 </StackPanel>
 
                 <!-- Notes Section -->
+                <TextBlock Text="{DynamicResource newTaskNotesTitle}" FontSize="16"></TextBlock>
                 <TextBox Text="{Binding Note, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,20" 
                          Height="100" Padding="10" 
                          Background="White" 

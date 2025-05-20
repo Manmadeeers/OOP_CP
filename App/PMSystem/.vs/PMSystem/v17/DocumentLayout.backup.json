@@ -7,6 +7,30 @@
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\projectinterractionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\statisticsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\statisticsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\statisticsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\statisticsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\projectinterractionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\projectinterractionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\resources\\lang.ru.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\resources\\lang.ru.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -15,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\resources\\lang.en.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\projectinterractionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\projectinterractionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|solutionrelative:dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\pmsystem\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C08D9F6-3033-47FA-89BE-C6BB80870FD9}|PMSystem\\PMSystem.csproj|solutionrelative:pmsystem\\view\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|c:\\users\\manmade\\desktop\\oop_cp\\app\\pmsystem\\dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21B5C200-8EC4-45D9-97BC-34A1C947CADB}|DAL\\DAL.csproj|solutionrelative:dal\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,23 +54,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "lang.ru.xaml",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.ru.xaml",
-              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.ru.xaml",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.ru.xaml",
-              "RelativeToolTip": "PMSystem\\Resources\\lang.ru.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-20T05:26:41.718Z",
+              "DocumentIndex": 0,
+              "Title": "ProjectInterractionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
+              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
+              "RelativeToolTip": "PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAcwGkAAACvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:40:29.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "StatisticsView.xaml",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\StatisticsView.xaml",
+              "RelativeDocumentMoniker": "PMSystem\\View\\StatisticsView.xaml",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\StatisticsView.xaml",
+              "RelativeToolTip": "PMSystem\\View\\StatisticsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T05:37:49.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProjectInterractionView.xaml",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\ProjectInterractionView.xaml",
               "RelativeDocumentMoniker": "PMSystem\\View\\ProjectInterractionView.xaml",
@@ -70,45 +95,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectInterractionViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
-              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
-              "RelativeToolTip": "PMSystem\\ViewModel\\ProjectInterractionViewModel.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAowJ8AAAAaAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "StatisticsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\StatisticsView.xaml.cs",
+              "RelativeDocumentMoniker": "PMSystem\\View\\StatisticsView.xaml.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\StatisticsView.xaml.cs",
+              "RelativeToolTip": "PMSystem\\View\\StatisticsView.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwC4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T05:17:50.043Z",
+              "WhenOpened": "2025-05-20T07:18:12.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
-              "RelativeDocumentMoniker": "DAL\\Repository.cs",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
-              "RelativeToolTip": "DAL\\Repository.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAuwIgAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T00:46:37.315Z",
+              "Title": "lang.ru.xaml",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.ru.xaml",
+              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.ru.xaml",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.ru.xaml",
+              "RelativeToolTip": "PMSystem\\Resources\\lang.ru.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T07:35:24.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "lang.en.xaml",
-              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
-              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.en.xaml",
-              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
-              "RelativeToolTip": "PMSystem\\Resources\\lang.en.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-19T21:23:27.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\MainView.xaml",
               "RelativeDocumentMoniker": "PMSystem\\View\\MainView.xaml",
@@ -120,20 +132,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "PMSystem\\ViewModel\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\MainViewModel.cs",
               "RelativeToolTip": "PMSystem\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAowCcBAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAGYBAAAAAAAAAAAkwHsBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T22:26:42.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "lang.en.xaml",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
+              "RelativeDocumentMoniker": "PMSystem\\Resources\\lang.en.xaml",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\Resources\\lang.en.xaml",
+              "RelativeToolTip": "PMSystem\\Resources\\lang.en.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-20T05:39:21.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StatisticsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\StatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "PMSystem\\ViewModel\\StatisticsViewModel.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\ViewModel\\StatisticsViewModel.cs",
+              "RelativeToolTip": "PMSystem\\ViewModel\\StatisticsViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwDUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:06:22.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repository.cs",
+              "ToolTip": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\DAL\\Repository.cs",
+              "RelativeToolTip": "DAL\\Repository.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAqwI0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T07:24:33.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Manmade\\Desktop\\OOP_CP\\App\\PMSystem\\PMSystem\\View\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "PMSystem\\View\\MainView.xaml.cs",
@@ -141,8 +191,7 @@
               "RelativeToolTip": "PMSystem\\View\\MainView.xaml.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAHYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T23:45:28.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-19T23:45:28.679Z"
             }
           ]
         }

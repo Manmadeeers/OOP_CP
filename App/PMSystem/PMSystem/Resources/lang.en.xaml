@@ -72,4 +72,11 @@
     <sys:String x:Key="GoButtonTitle">Go</sys:String>
     <!--Statistics View-->
     <sys:String x:Key="StatisticsViewTitle">Statistics</sys:String>
+    <sys:String x:Key="AdminProjectsAmoutn">All Projects Count</sys:String>
+    <sys:String x:Key="AdminUsersAmoutn">All Users Count</sys:String>
+    <sys:String x:Key="AdminTasksAmoutn">All Tasks Count</sys:String>
+    <sys:String x:Key="userClosedTasks">Closed Tasks</sys:String>
+    <sys:String x:Key="userProgTasks">In Progress Tasks</sys:String>
+    <sys:String x:Key="userNotTasks">Not Started Tasks</sys:String>
+    <sys:String x:Key="completion">Completion %</sys:String>
 </ResourceDictionary>

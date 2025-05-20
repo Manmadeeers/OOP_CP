@@ -375,7 +375,9 @@ namespace PMSystem.ViewModel
 
         private void ShowStatistics(object parameter)
         {
-
+            StatisticsView stat = new StatisticsView(User);
+            stat.DataContext = new StatisticsViewModel(User);
+            stat.ShowDialog();
         }
         private bool CanShowStatistics(object parameter)
         {

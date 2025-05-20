@@ -61,7 +61,7 @@ namespace PMSystem.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PMSystem;V1.0.0.0;component/view/addnewproject.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PMSystem;component/view/addnewproject.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AddNewProject.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

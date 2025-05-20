@@ -69,4 +69,13 @@
     <sys:String x:Key="InProgressSection">В работе</sys:String>
     <sys:String x:Key="FinishedSection">Завершена</sys:String>
     <sys:String x:Key="GoButtonTitle">Вперёд</sys:String>
+    <!--Statistics View-->
+    <sys:String x:Key="StatisticsViewTitle">Статистика</sys:String>
+    <sys:String x:Key="AdminProjectsAmoutn">Количество проектов</sys:String>
+    <sys:String x:Key="AdminUsersAmoutn">Количество пользователей</sys:String>
+    <sys:String x:Key="AdminTasksAmoutn">Количество задач</sys:String>
+    <sys:String x:Key="userClosedTasks">Закрытые задачи</sys:String>
+    <sys:String x:Key="userProgTasks">Задачи в разработке</sys:String>
+    <sys:String x:Key="userNotTasks">Не начатые задачи</sys:String>
+    <sys:String x:Key="completion">Процент выполняемости %</sys:String>
 </ResourceDictionary>

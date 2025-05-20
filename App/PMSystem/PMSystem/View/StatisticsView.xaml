@@ -21,15 +21,40 @@
                 </Button>
                 <TextBlock Text="{DynamicResource StatisticsViewTitle}" FontSize="26" FontWeight="SemiBold" Foreground="#333" Margin="0,0,0,20" HorizontalAlignment="Center"/>
 
-                <TextBlock Text="{DynamicResource UserName}" Foreground="#555" Margin="0,5,0,2"/>
-                <TextBlock Text="{Binding User.UserName}" FontSize="16" Foreground="#222"/>
+                <StackPanel Name="AdminStat" Orientation="Vertical">
 
-                <TextBlock Text="{DynamicResource UserEmail}" Foreground="#555" Margin="0,15,0,2"/>
-                <TextBlock Text="{Binding User.UserEmail}" FontSize="16" Foreground="#222"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBlock Text="{DynamicResource AdminProjectsAmoutn}"></TextBlock>
+                        <TextBlock Text="{Binding  AdminProjAmount}" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBlock Text="{DynamicResource AdminUsersAmoutn}"></TextBlock>
+                        <TextBlock Text="{Binding  AdminUserCount}" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource AdminTasksAmoutn}"></TextBlock>
+                        <TextBlock Text="{Binding AdminTasksCount}" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                 </StackPanel>
 
-                <TextBlock Text="{DynamicResource UserPassword}" Foreground="#555" Margin="0,15,0,2"/>
-                <TextBlock Text="{Binding User.UserPassword}" FontSize="16" Foreground="#222" TextWrapping="Wrap" MaxHeight="150"/>
-
+                <StackPanel Name="UserStat">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBlock Text="{DynamicResource userClosedTasks}"></TextBlock>
+                        <TextBlock Text="{Binding AmountCompletedTasks}" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <TextBlock Text="{DynamicResource userProgTasks}"></TextBlock>
+                        <TextBlock Text="{Binding AmountProgTasks }" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource userNotTasks}"></TextBlock>
+                        <TextBlock Text="{Binding  AmountNotTasks}" Margin="20,0,0,0"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{DynamicResource completion}"></TextBlock>
+                        <TextBlock Text="{Binding CompletionPercentage}"></TextBlock>
+                    </StackPanel>
+                </StackPanel>
                 <Button Content="{DynamicResource UserPAgeCloseButton}" Width="100" Height="36" Margin="0,30,0,0" HorizontalAlignment="Center" Background="#2196F3" Foreground="White" BorderThickness="0" Cursor="Hand"
                     Click="CloseClick">
                     <Button.Style>

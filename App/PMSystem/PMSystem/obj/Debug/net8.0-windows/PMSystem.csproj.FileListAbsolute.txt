@@ -91,3 +91,5 @@ C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\V
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\ProjectInterractionView.baml
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddUserView.g.cs
 C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\AddUserView.baml
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\StatisticsView.g.cs
+C:\Users\Manmade\Desktop\OOP_CP\App\PMSystem\PMSystem\obj\Debug\net8.0-windows\View\StatisticsView.baml

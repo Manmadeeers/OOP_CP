@@ -89,24 +89,52 @@ namespace PMSystem.ViewModel
 
         private void RefreshData()
         {
-            var allNotStarted  = new ObservableCollection<TaskModel>(App.repository.GetAllUsersNotStartedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
-            NotStartedTasks.Clear();
-            foreach(var task in allNotStarted)
+            if (User.IsAdmin)
             {
-                NotStartedTasks.Add(task);
+                var allNotStarted = new ObservableCollection<TaskModel>(App.repository.GetAllUsersNotStartedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+                NotStartedTasks.Clear();
+                foreach (var task in allNotStarted)
+                {
+                    NotStartedTasks.Add(task);
+                }
+                var allinProgress = new ObservableCollection<TaskModel>(App.repository.GetAllUsersInProgressTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+                InProgressTasks.Clear();
+                foreach (var task in allinProgress)
+                {
+                    InProgressTasks.Add(task);
+                }
+                var allFinished = new ObservableCollection<TaskModel>(App.repository.GetAllUsersCompletedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
+                FinishedTasks.Clear();
+                foreach (var task in allFinished)
+                {
+                    FinishedTasks.Add(task);
+                }
             }
-            var allinProgress = new ObservableCollection<TaskModel>(App.repository.GetAllUsersInProgressTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
-            InProgressTasks.Clear();
-            foreach(var task in allinProgress)
+            else
             {
-                InProgressTasks.Add(task);
+                var allNotStarted = new ObservableCollection<TaskModel>(App.repository.GetAllUsersNotStartedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).Where(t => t.UserId == User.UserId).ToList());
+                NotStartedTasks.Clear();
+                foreach (var task in allNotStarted)
+                {
+                    NotStartedTasks.Add(task);
+                }
+                var allinProgress = new ObservableCollection<TaskModel>(App.repository.GetAllUsersInProgressTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).Where(t => t.UserId == User.UserId).ToList());
+                InProgressTasks.Clear();
+                foreach (var task in allinProgress)
+                {
+                    InProgressTasks.Add(task);
+                }
+                var allFinished = new ObservableCollection<TaskModel>(App.repository.GetAllUsersCompletedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).Where(t => t.UserId == User.UserId).ToList());
+                FinishedTasks.Clear();
+                foreach (var task in allFinished)
+                {
+                    FinishedTasks.Add(task);
+                }
             }
-            var allFinished = new ObservableCollection<TaskModel>(App.repository.GetAllUsersCompletedTasks(User.UserId).Where(t => t.ProjectId == CurrentProject.ProjectId).ToList());
-            FinishedTasks.Clear();
-            foreach(var task in allFinished)
-            {
-                FinishedTasks.Add(task);
-            }
+            
+           
+            
+           
         }
    
 

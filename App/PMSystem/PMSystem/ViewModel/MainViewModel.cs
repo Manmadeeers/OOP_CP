@@ -344,8 +344,8 @@ namespace PMSystem.ViewModel
         public ICommand ShowProjectInterCommand => _showProjectInterCommand ??= new GenericRelayCommand<ProjectModel>(ShowProhectInter,CanShowProjectInter);
         private void ShowProhectInter(ProjectModel projectModel)
         {
-            ProjectInterractionView projectView = new ProjectInterractionView();
-            projectView.DataContext = new ProjectInterractionViewModel(User,projectModel);
+            ProjectInterractionView projectView = new ProjectInterractionView(User);
+            projectView.DataContext = new ProjectInterractionViewModel(User,projectModel,projectView);
             projectView.Show();
             MainView.Close();
         }

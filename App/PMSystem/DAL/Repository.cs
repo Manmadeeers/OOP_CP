@@ -31,6 +31,7 @@ namespace DAL
         public UserModel?GetUserAssignedOnTask(int userId);
         public bool AddTask(TaskModel task);
         public bool UpdateTaskNotes(string notes, int id);
+        public bool UpdateTaskStatus(string status, int id);
         public bool UpdateTaskInfo(TaskModel updTask, int id);
         public bool DeleteTask(int id);
 
@@ -177,6 +178,22 @@ namespace DAL
                
                 taskToUpdate.Notes = notes;
                 this._context.Tasks.Update(taskToUpdate);
+                this._context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateTaskStatus(string status, int id)
+        {
+            TaskModel?taskToUpdate = this._context.Tasks.FirstOrDefault(t=>t.TaskId == id);
+            if(taskToUpdate is not null)
+            {
+                taskToUpdate.TaskStatus = status;
+                this._context.Update(taskToUpdate);
                 this._context.SaveChanges();
                 return true;
             }

@@ -87,16 +87,21 @@ namespace PMSystem.ViewModel
                 MessageBox.Show("User Not Found!","Fail",MessageBoxButton.OK, MessageBoxImage.Error); 
                 
             }
+            else
+            {
+                MainView mainPage = new MainView(loggedUser);
+                mainPage.Show();
+
+                _loginView.Close();
+            }
+
 
 
             Username = string.Empty;
             Password = string.Empty;
 
 
-            MainView mainPage = new MainView(loggedUser);
-            mainPage.Show();
-
-            _loginView.Close();
+           
 
 
             //if (success)

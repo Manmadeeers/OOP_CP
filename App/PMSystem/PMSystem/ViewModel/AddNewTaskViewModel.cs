@@ -124,15 +124,23 @@ namespace PMSystem.ViewModel
         public ICommand AddCommand => _addCommand ??= new RelayCommand(Add,CanAdd);
         private void Add(object parameter)
         {
-            TaskModel newTask = new TaskModel(Name,Status,Description,Note,SelectedProject.ProjectId,SelectedUser.UserId);
-            if (App.repository.AddTask(newTask))
+            if (Name != null && Note != null && Status != null && Description != null && SelectedProject != null && SelectedUser != null)
             {
-                MessageBox.Show("Task added!", "Success!", MessageBoxButton.OK, MessageBoxImage.Information);
+                TaskModel newTask = new TaskModel(Name, Status, Description, Note, SelectedProject.ProjectId, SelectedUser.UserId);
+                if (App.repository.AddTask(newTask))
+                {
+                    MessageBox.Show("Task added!", "Success!", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Something went wrong", "Fail", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Something went wrong","Fail",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Something went wrong", "Fail", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            
 
         }
         private bool CanAdd(object parameter)

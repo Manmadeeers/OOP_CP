@@ -64,4 +64,7 @@
     <sys:String x:Key="newUserNameTitle">Name:</sys:String>
     <sys:String x:Key="newUserPasswordTitle">Password:</sys:String>
     <sys:String x:Key="newUserEmailTitle">Email:</sys:String>
+    <!--Project Main View-->
+    <sys:String x:Key="ProjectMainPageTitle">Project</sys:String>
+    <sys:String x:Key="NotStartedSection">Not Started</sys:String>
 </ResourceDictionary>
